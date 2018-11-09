@@ -4,6 +4,8 @@
   "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP",
   "main": "index.js",
   "scripts": {
+    "dev": "parallelshell 'npm run scss' 'npm run browser-sync'",
+    "browser-sync": "browser-sync start --server --files app/**/* build/**/* --startPath app/src",
     "scss": "node-sass --watch app/src/styles -o build/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/Josie-N/Survey-Form#readme",
   "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "parallelshell": "^3.0.2",
     "node-sass": "^4.10.0"
   }
 }
