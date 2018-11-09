@@ -4,6 +4,7 @@
   "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP",
   "main": "index.js",
   "scripts": {
+    "scss": "node-sass --watch app/src/styles -o build/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Josie-N/Survey-Form/issues"
   },
-  "homepage": "https://github.com/Josie-N/Survey-Form#readme"
+  "homepage": "https://github.com/Josie-N/Survey-Form#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
 }
