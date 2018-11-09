@@ -1,0 +1,19 @@
+{
+  "name": "surey_form",
+  "version": "1.0.0",
+  "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josie-N/Survey-Form.git"
+  },
+  "author": "Josie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josie-N/Survey-Form/issues"
+  },
+  "homepage": "https://github.com/Josie-N/Survey-Form#readme"
+}
