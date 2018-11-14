@@ -25,9 +25,9 @@
 */
 
 
-$space-6:     6px;  // 12 / 2
-$space-12:   12px;  // baseline 
-$space-24:   24px;  // 12 * 2
+$space-6:     6px;   // 12 / 2
+$space-12:   12px;   // baseline 
+$space-24:   24px;   // 12 * 2
 $space-36:   36px;
 
 $space-48:   48px;
@@ -42,12 +42,31 @@ $space-120: 120px;
 
 
 
+//  Centering elements   ------------ //
+
+
+//  Using Flex
+
+@mixin flex($justify: 'flex-start', $align: 'stretch') {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+//  How to use:
+//  @include flex('center', 'center');
 
 
 
+//  Using Block
 
+@mixin center-horizontal-block {
+	display: block;
+	margin: 0 auto;
+}
 
-
+//  How to use:
+//  @include center-horizontal-block;
 
 
 
