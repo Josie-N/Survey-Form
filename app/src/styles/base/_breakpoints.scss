@@ -1,0 +1,36 @@
+/*
+⎟  
+⎟    Breakpoint Mixins 
+⎟
+⎟    Based on this article: 
+⎟    https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+⎟   
+⎟   
+⎟    When adding it to classes and elements, use: 
+⎟
+⎟    @include breakpoint(md) { 
+⎟ 
+⎟    }
+⎟ 
+⎟    @include breakpoint(lg) { 
+⎟ 
+⎟    }
+⎟    
+⎟
+*/
+
+
+
+@mixin breakpoint($class) {
+  @if $class == md {
+    @media (max-width: 1000px) { @content; }   // change breakpoint later
+  }
+
+  @else if $class == lg {
+    @media (max-width: 1400px) { @content; }   // change breakpoint later
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: md, lg";
+  }
+}
