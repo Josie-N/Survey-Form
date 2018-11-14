@@ -8,9 +8,9 @@
 // margin: em(20px);
 //
 
-@import '../base/variables';  // needs to be changed
+@import './typography';  
 
-$browser-context: $font-size-base;
+$browser-context: $font-size-base; 
 
 @function em($pixels, $context: $browser-context) {
   @return converter($pixels, 'em', $context);
