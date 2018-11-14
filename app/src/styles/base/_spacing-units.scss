@@ -1,0 +1,53 @@
+/*
+⎟ 
+⎟    Spacing Unit System  
+⎟
+⎟    A fixed set of values that should be used for all whitespaces 
+⎟    in this project, ensuring consistent spacing in the UI.
+⎟ 
+⎟
+⎟    This system is created to:
+⎟    - avoid visual approximations and inconsistencies
+⎟    - reduce pixel perfect adjustments when building components 
+⎟    - maintain (typographic) vertical rhythm
+⎟ 
+⎟
+⎟    How it was calculated:
+⎟
+⎟    If base font size: 16px
+⎟    Then base line height: 24px (ratio = 1.5)
+⎟
+⎟    (base line height) 24px / 2 = 12px  (baseline value)
+⎟    baseline value X 2 = next upper value
+⎟    baseline value / 2 = next lower value
+⎟
+⎟
+*/
+
+
+$space-6:     6px;  // 12 / 2
+$space-12:   12px;  // baseline 
+$space-24:   24px;  // 12 * 2
+$space-36:   36px;
+
+$space-48:   48px;
+$space-60:   60px;
+$space-72:   72px;
+$space-84:   84px;
+
+$space-90:   90px;
+$space-96:   96px;
+$space-108: 108px;
+$space-120: 120px;
+
+
+
+
+
+
+
+
+
+
+
+
