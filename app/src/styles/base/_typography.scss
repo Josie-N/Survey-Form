@@ -1,4 +1,10 @@
- 
+/*
+⎟  
+⎟  Typography System
+⎟ 
+⎟  https://medium.com/tradecraft-traction/harmonious-typography-and-grids-10da490a17d
+⎟ 
+*/
 
 
 //  Font Stacks   ------------ //
@@ -35,8 +41,74 @@ $line-height-small        :  20px;
 $line-height-extra-small  :  17px;
 
 
-// Font Styles  --------------  //
+
+//  Font Styles  --------------  //
+
+
+%font-main-heading {
+  font-family:      $font-stack-TTCommons;
+  font-size:       $font-size-extra-large;
+  line-height:   $line-height-extra-large; 
+  color:                     $plain-white;  // maybe too specific?
+  letter-spacing:                  normal;
+}
+
+
+%font-sub-heading-1 {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                       $font-size-large;
+  line-height:                   $line-height-large; 
+  color:                              $raisin-black;
+  letter-spacing:                            normal;
+}
+
+
+%font-sub-heading-2 {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                      $font-size-medium;
+  line-height:                  $line-height-medium; 
+  color:                              $raisin-black;
+  letter-spacing:                            normal;
+}
 
 
 
 
+%font-body-text {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                        $font-size-base;
+  line-height:                    $line-height-base; 
+  color:                           $raisin-black-19;
+  letter-spacing:                            -0.2px;
+}
+
+
+%font-body-text-bold {
+  font-family:     $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                        $font-size-base;
+  line-height:                    $line-height-base; 
+  color:                              $raisin-black;
+  letter-spacing:                             0.5px;
+}
+
+
+%font-small-text-italic {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                       $font-size-small;
+  line-height:                   $line-height-small; 
+  color:                             $platinum-gray;
+  letter-spacing:                            normal;
+}
+
+
+%font-extra-small-text {
+  font-family:     $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                 $font-size-extra-small;
+  line-height:             $line-height-extra-small; 
+  color:                               $plain-white;
+  letter-spacing:                            normal;
+}
+
+
+
+//---------------------------------------//
