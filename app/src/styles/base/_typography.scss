@@ -1,0 +1,114 @@
+/*
+⎟  
+⎟  Typography System
+⎟ 
+⎟  https://medium.com/tradecraft-traction/harmonious-typography-and-grids-10da490a17d
+⎟ 
+*/
+
+
+//  Font Stacks   ------------ //
+
+
+$font-stack-TTCommons: 'TTCommons Regular', Arial, Helvetica, sans-serif;	
+$font-stack-IBM_Plex_Sans_Regular: 'IBM Plex Sans Regular', 'Avant Garde', Arial, Helvetica, sans-serif;	
+$font-stack-IBM_Plex_Sans_Italic: 'IBM Plex Sans Regular Italic', cursive;	
+$font-stack-IBM_Plex_Sans_Medium: 'IBM Plex Sans Medium', 'Avant Garde', Arial, Helvetica, sans-serif;	
+$font-stack-IBM_Plex_Sans_Medium_Italic: 'IBM Plex Sans Medium Italic', 'Avant Garde', Arial, Helvetica, sans-serif;	
+
+
+
+//  Font Sizes   ------------ //
+
+
+$font-size-extra-large  :   36px;
+$font-size-large        :   24px;
+$font-size-medium       :   20px;
+$font-size-base         :   16px;
+$font-size-small        :   13px; 
+$font-size-extra-small  : 11.4px;
+
+
+
+//  Line Heights   ---------- //
+
+
+$line-height-extra-large  :  54px;
+$line-height-large        :  36px;
+$line-height-medium       :  30px;
+$line-height-base         :  24px;
+$line-height-small        :  20px; 
+$line-height-extra-small  :  17px;
+
+
+
+//  Font Styles  --------------  //
+
+
+%font-main-heading {
+  font-family:      $font-stack-TTCommons;
+  font-size:       $font-size-extra-large;
+  line-height:   $line-height-extra-large; 
+  color:                     $plain-white;  // maybe too specific?
+  letter-spacing:                  normal;
+}
+
+
+%font-sub-heading-1 {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                       $font-size-large;
+  line-height:                   $line-height-large; 
+  color:                              $raisin-black;
+  letter-spacing:                            normal;
+}
+
+
+%font-sub-heading-2 {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                      $font-size-medium;
+  line-height:                  $line-height-medium; 
+  color:                              $raisin-black;
+  letter-spacing:                            normal;
+}
+
+
+
+
+%font-body-text {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                        $font-size-base;
+  line-height:                    $line-height-base; 
+  color:                           $raisin-black-19;
+  letter-spacing:                            -0.2px;
+}
+
+
+%font-body-text-bold {
+  font-family:     $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                        $font-size-base;
+  line-height:                    $line-height-base; 
+  color:                              $raisin-black;
+  letter-spacing:                             0.5px;
+}
+
+
+%font-small-text-italic {
+  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-size:                       $font-size-small;
+  line-height:                   $line-height-small; 
+  color:                             $platinum-gray;
+  letter-spacing:                            normal;
+}
+
+
+%font-extra-small-text {
+  font-family:     $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                 $font-size-extra-small;
+  line-height:             $line-height-extra-small; 
+  color:                               $plain-white;
+  letter-spacing:                            normal;
+}
+
+
+
+//---------------------------------------//
