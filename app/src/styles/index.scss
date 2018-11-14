@@ -1,6 +1,17 @@
-@import "./base/reset.scss";
+// Import from most general to the most specific
 
-body {
-  color: red;
-  background-color: greenyellow;
-}
+// Base Styles
+
+@import "./base/reset";
+@import "./base/breakpoints";
+@import "./base/color-palette";
+@import "./base/spacing-units";
+@import "./base/PX-to-EM";
+@import "./base/fonts";
+@import "./base/typography";
+@import "./base/generic";
+
+
+// Sections
+
+@import "./sections/header";
