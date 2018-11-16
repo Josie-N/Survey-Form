@@ -48,11 +48,6 @@
       z-index: 1;
     }
 
-    span {
-      transform-origin: bottom right;
-      transform: skew(0deg,-30deg);
-    }
-
     h1 {
       @extend %font-main-heading;
     }
