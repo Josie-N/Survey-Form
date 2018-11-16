@@ -21,24 +21,24 @@ $font-stack-IBM_Plex_Sans_Medium_Italic: 'IBM Plex Sans Medium Italic', 'Avant G
 //  Font Sizes   ------------ //
 
 
-$font-size-extra-large  :   36px;
-$font-size-large        :   24px;
-$font-size-medium       :   20px;
-$font-size-base         :   16px;
-$font-size-small        :   13px; 
-$font-size-extra-small  : 11.4px;
+$font-size-extra-large  :   rem(36px);
+$font-size-large        :   rem(24px);
+$font-size-medium       :   rem(20px);
+$font-size-base         :        16px;   // deadlock situation: _typography.scss and _PX-to-EM.scss both need to each other to complete the task   
+$font-size-small        :   rem(13px); 
+$font-size-extra-small  : rem(11.4px);
 
 
 
 //  Line Heights   ---------- //
 
 
-$line-height-extra-large  :  54px;
-$line-height-large        :  36px;
-$line-height-medium       :  30px;
-$line-height-base         :  24px;
-$line-height-small        :  20px; 
-$line-height-extra-small  :  17px;
+$line-height-extra-large  :  rem(54px);
+$line-height-large        :  rem(36px);
+$line-height-medium       :  rem(30px);
+$line-height-base         :  rem(24px);
+$line-height-small        :  rem(20px); 
+$line-height-extra-small  :  rem(17px);
 
 
 
@@ -93,7 +93,7 @@ $line-height-extra-small  :  17px;
 
 
 %font-small-text-italic {
-  font-family:    $font-stack-IBM_Plex_Sans_Regular;
+  font-family:     $font-stack-IBM_Plex_Sans_Italic;
   font-size:                       $font-size-small;
   line-height:                   $line-height-small; 
   color:                             $platinum-gray;
