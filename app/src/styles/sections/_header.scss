@@ -1,0 +1,70 @@
+.header {
+  background: $raisin-black;
+  padding: 1px;   // collapsing margin issue fixed: https://www.sitepoint.com/collapsing-margins/
+
+  &__container {
+    // border: 1px solid blue;
+    width: rem(416px);
+    
+    @include center-horizontal-block; 
+    margin-top: $space-60;   
+    margin-bottom: $space-84;
+
+    // background: url(../../../../assets/logo/survey-form-FCC-logo-tablet.svg) no-repeat;
+    // background-position: left bottom;
+  }
+
+  &__time-info-container {  
+    @include flex(flex-start, center);
+    margin-bottom: $space-24;
+
+    p {
+      @extend %font-small-text-italic;
+      word-spacing: 3px;
+    }
+  }
+
+  &__decorative-line {
+    background-color: #354290;
+    height: 2px;
+
+    &:first-of-type {
+      width: 55.8%;
+      margin-right: 24px;
+    }
+
+    &:last-of-type {
+      width: 10%;
+      margin-left: 24px;
+    }
+  }
+
+  &__highlight-background {
+    span:first-of-type {
+      z-index: 2;
+    }
+
+    span:last-of-type {
+      z-index: 1;
+    }
+
+    span {
+      transform-origin: bottom right;
+      transform: skew(0deg,-30deg);
+    }
+
+    h1 {
+      @extend %font-main-heading;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      background-color: $van-gogh-blue;
+      box-shadow: 4px -5px 34px 1px rgba(36,36,36,0.67);
+      height: 60px;
+      padding: 8px 58px 0px 14px;
+    }
+  }
+}
+
