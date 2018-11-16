@@ -1,0 +1,15 @@
+html {
+  font-size: $font-size-base;
+  font-family: $font-stack-IBM_Plex_Sans_Regular;
+  line-height: $line-height-base;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul, li {
+  list-style-type: none;
+}

@@ -25,20 +25,20 @@
 */
 
 
-$space-6:     6px;   // 12 / 2
-$space-12:   12px;   // baseline 
-$space-24:   24px;   // 12 * 2
-$space-36:   36px;
+$space-6:     rem(6px);   // 12 / 2
+$space-12:   rem(12px);   // baseline 
+$space-24:   rem(24px);   // 12 * 2
+$space-36:   rem(36px);
 
-$space-48:   48px;
-$space-60:   60px;
-$space-72:   72px;
-$space-84:   84px;
+$space-48:   rem(48px);
+$space-60:   rem(60px);
+$space-72:   rem(72px);
+$space-84:   rem(84px);
 
-$space-90:   90px;
-$space-96:   96px;
-$space-108: 108px;
-$space-120: 120px;
+$space-90:   rem(90px);
+$space-96:   rem(96px);
+$space-108: rem(108px);
+$space-120: rem(120px);
 
 
 
@@ -54,7 +54,7 @@ $space-120: 120px;
 }
 
 //  How to use:
-//  @include flex('center', 'center');
+//  @include flex(center, center);
 
 
 
