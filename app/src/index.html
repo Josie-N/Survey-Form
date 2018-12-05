@@ -27,18 +27,49 @@
     </header>
     <form id="survey-form" class="form" action="index.html" method="post">
       <div class="question-container">
-        <label class="question-container__label" for="name"><span><abbr title="required">*</abbr></span>1. First Name</label>
-        <input class="question-container__input" id="name" type="text" name="user_name" placeholder="Your first name" required>  <!-- Used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
+        <label class="question-container__label" 
+               for="name">
+               <span><abbr title="required">*</abbr></span>1. First Name
+        </label>
+        <input class="question-container__input" 
+               id="name" 
+               type="text" 
+               name="user_name"  
+               placeholder="Your first name"
+               spellcheck="false"
+               autocomplete="off" 
+               required>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
       </div>
 
       <div class="question-container">
-        <label class="question-container__label" for="email"><abbr title="required">*</abbr>2. Email Address</label>
-        <input class="question-container__input" id="email" type="email" name="user_email" placeholder="Your email address" required>
+        <label class="question-container__label" 
+               for="email">
+               <abbr title="required">*</abbr>2. Email Address
+        </label>
+        <input class="question-container__input" 
+               id="email" 
+               type="email"
+               name="user_email" 
+               placeholder="Your email address"
+               spellcheck="false"
+               autocomplete="off" 
+               required>
       </div>
 
       <div class="question-container">
-        <label class="question-container__label" for="number"><abbr title="required">*</abbr>3. What is your age?</label>
-        <input class="question-container__input" id="number" type="number" name="user_age" placeholder="Your age" min="2000-01-01" max="2018-11-01" required>
+        <label class="question-container__label" 
+               for="number">
+               <abbr title="required">*</abbr>3. What is your age?
+        </label>
+        <input class="question-container__input" 
+               id="number" 
+               type="number" 
+               name="user_age" 
+               placeholder="Your age" 
+               min="2000-01-01" max="2018-11-01" 
+               spellcheck="false"
+               autocomplete="off"
+               required>
       </div>   
     </form>
   </body>

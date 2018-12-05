@@ -15,18 +15,36 @@
     &__label {
       @extend %font-sub-heading-2;
       margin-bottom: $space-12;
+
       abbr[title] {
-        padding-right: rem(2px);
+        // padding-right: rem(2px);
         font-size: $font-size-large;
       }
     }
 
     &__input {
       height: $space-36; width: rem(316px);
+      border: 1px solid $platinum-gray-b34;
+      padding-left: rem(17px);
 
+      @extend %font-body-text-bold;
+
+      // changes placeholder text style
       &::placeholder {
         @extend %font-body-text;
-        padding-left: rem(17px);
+      }
+
+      // changes color to the part of a document that has been highlighted by the user 
+      &::selection {
+        background: $van-gogh-blue;
+        color: $plain-white;
+
+      }
+      
+      &:focus {
+        border: 2px solid $van-gogh-blue;
+        @extend %font-body-text-bold; 
+        transition: border 0.1s linear;
       }
     }
   }
