@@ -1,0 +1,33 @@
+#survey-form {
+  margin: $space-96 auto; 
+  max-width: rem(417px);
+  // @include center-horizontal-block;
+  border: 1px solid black;
+
+  .question-container {
+    margin-bottom: $space-90;
+
+    &__label,
+    &__input {
+      display: block;
+    }
+
+    &__label {
+      @extend %font-sub-heading-2;
+      margin-bottom: $space-12;
+      abbr[title] {
+        padding-right: rem(2px);
+        font-size: $font-size-large;
+      }
+    }
+
+    &__input {
+      height: $space-36; width: rem(316px);
+
+      &::placeholder {
+        @extend %font-body-text;
+        padding-left: rem(17px);
+      }
+    }
+  }
+}
