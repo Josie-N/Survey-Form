@@ -18,7 +18,7 @@ abbr[title] {
   text-decoration: none;
 }
 
-//   Remove gray focus line. 
+//   Removes gray focus line. 
 
 input {
   &:focus {
@@ -34,4 +34,14 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+//   Removes number input spinners (arrows)
+//   when trying to add your age
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
