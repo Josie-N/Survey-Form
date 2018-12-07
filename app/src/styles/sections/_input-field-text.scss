@@ -52,7 +52,7 @@
     }
 
     &__select {
-      @extend %font-body-text-bold;
+      @extend %font-body-text;
       height: $space-36; width: rem(316px);
       padding-left: rem(17px);
 
@@ -69,11 +69,6 @@
       border: none;
 
       border-bottom: 1px solid $platinum-gray-b34;
-
-      &:hover {
-        border-bottom: 1px solid $raisin-black-w40;
-        transition: border-bottom 0.2s linear;
-      }
 
       &:focus {
         @extend %font-body-text-bold; 
