@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="../../build/css/index.css">
   </head>
   <body>
-<<<<<<< Updated upstream
-    i am the one!
-=======
     <header class="header">
       <div class="header__container">
         
@@ -77,7 +74,7 @@
       
       <div class="question-container">
         <label class="question-container__label">
-                <abbr title="required">*</abbr>4. Which option best describes your role? 
+               <abbr title="required">*</abbr>4. Which option best describes your role? 
         </label>
         <select class="question-container__select" id="dropdown">
           <option value="please-select" disabled selected>Please select</option>
@@ -87,9 +84,30 @@
           <option value="prefer-not-to-say">Prefer not to say</option>
           <option value="other">Other</option>
         </select>
-      </div>   
+      </div>
+      
+      <div class="question-container">
+        <label class="question-container__label">
+               <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
+        </label>
+
+        <div class="question-container__answer-option-cell">
+          <input id="yes" type="radio" name="reply" value="reply_yes">
+          <label for="yes">Definitely</label>
+        </div>
+
+        <div class="question-container__answer-option-cell">     <!-- name attribute - how the data is sent back to the server -->
+          <input id="maybe" type="radio" name="reply" value="reply_maybe">  
+          <label for="maybe">Maybe</label>
+        </div>
+
+        <div class="question-container__answer-option-cell">
+          <input id="no" type="radio" name="reply" value="reply_no">
+          <label for="no">Not Sure</label>
+        </div>
+      </div>
+
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
->>>>>>> Stashed changes
   </body>
 </html>
