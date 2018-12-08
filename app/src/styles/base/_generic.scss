@@ -10,14 +10,23 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: $font-stack-IBM_Plex_Sans_Regular;
+  font-size: $font-size-base;
+}
+
 ul, li {
   list-style-type: none;
 }
 
+//  make the asterisk larger using a different font size
+//  from <abbr title="">  
+
 abbr[title] {
   text-decoration: none;
-}
-
+  font-size: $font-size-large;
+} 
+    
 //   Removes gray focus line. 
 
 input {
