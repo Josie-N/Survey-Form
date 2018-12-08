@@ -26,6 +26,7 @@
       </div>
     </header>
     <form id="survey-form" class="form" action="index.html" method="post">
+      <!--  Question 1  -->
       <div class="question-container">
         <label class="question-container__label" 
                for="name">
@@ -40,7 +41,7 @@
                autocomplete="off" 
                required>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
       </div>
-
+      <!--  Question 2  -->
       <div class="question-container">
         <label class="question-container__label" 
                for="email">
@@ -55,7 +56,7 @@
                autocomplete="off" 
                required>
       </div>
-
+      <!--  Question 3  -->
       <div class="question-container">
         <label class="question-container__label" 
                for="number">
@@ -71,7 +72,7 @@
                autocomplete="off"
                required>
       </div>
-      
+      <!--  Question 4  -->
       <div class="question-container">
         <label class="question-container__label">
                <abbr title="required">*</abbr>4. Which option best describes your role? 
@@ -85,28 +86,67 @@
           <option value="other">Other</option>
         </select>
       </div>
-      
+      <!--  Question 5  -->
       <div class="question-container">
-        <label class="question-container__label">
+        <label class="question-container__label-large">
                <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
         </label>
-
+        
         <div class="question-container__answer-option-cell">
-          <input id="yes" type="radio" name="reply" value="reply_yes">
-          <label for="yes">Definitely</label>
-        </div>
-
-        <div class="question-container__answer-option-cell">     <!-- name attribute - how the data is sent back to the server -->
-          <input id="maybe" type="radio" name="reply" value="reply_maybe">  
-          <label for="maybe">Maybe</label>
+          <label class="question-container__radio">Definitely 
+            <input type="radio" name="reply" value="reply_yes"/>  <!-- name attribute - how the data is sent back to the server -->
+            <span class="checkmark"></span>
+          </label>
         </div>
 
         <div class="question-container__answer-option-cell">
-          <input id="no" type="radio" name="reply" value="reply_no">
-          <label for="no">Not Sure</label>
+          <label class="question-container__radio">Maybe
+            <input type="radio" name="reply" value="reply_maybe"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="question-container__answer-option-cell">
+          <label class="question-container__radio">Not sure
+            <input type="radio" name="reply" value="reply_no"/>
+            <span class="checkmark"></span>
+          </label>
         </div>
       </div>
+      <!--  Question 6  -->
+      <div class="question-container">
+          <label class="question-container__label-large">
+            6. What do you like most about our online courses? 
+          </label>
+          
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__radio">Challenges
+              <input type="radio" name="reply-2" value="challenges"/>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+  
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__radio">Projects
+              <input type="radio" name="reply-2" value="projects"/>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+  
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__radio">Community
+              <input type="radio" name="reply-2" value="reply_no"/>
+              <span class="checkmark"></span>
+            </label>
+          </div>
 
+          <div class="question-container__answer-option-cell">
+              <label class="question-container__radio">Open Source
+                <input type="radio" name="reply-2" value="reply_no"/>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+        </div>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
