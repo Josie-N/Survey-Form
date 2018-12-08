@@ -1,0 +1,86 @@
+
+.question-container {
+
+  &__label-large {
+    @extend %font-sub-heading-2;
+
+    /* Needs to become block or inline-block to accept margin-bottom */
+    display: inline-block;
+    margin-bottom: $space-24;
+  }
+
+  &__answer-option-cell {
+    height: $space-24;
+    margin-bottom: $space-12;
+  }
+
+  /* Customize the label (as in the container/ wrapper) */
+  &__radio {
+    @extend %font-body-text;
+
+    /* Vertically align __radio container with it's parrent */
+    /* Flexbox was not working, this was my alternative */
+    position: relative;
+    bottom: rem(3px);
+
+    padding-left: $space-36;
+
+    /*  Text inside element cannot be selected  */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+
+    /*  Hide the browser's default radio button */
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      width: 0; height: 0; 
+    }
+
+    /*  On mouse-over, add a blue border color */
+    &:hover {
+      input ~ .checkmark {
+        border: 1px solid $van-gogh-blue;
+      }
+    }
+  }
+
+  /* Create a custom radio button */
+
+  .checkmark {
+    /* Create the small circle container that the checkmark will be displayed in */
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: rem(22px); height: rem(22px); 
+    border-radius: 50%;
+    border: 1px solid: $raisin-black-w19;
+
+    /* Create the indicator */
+
+    /* When hidden (not checked) - add the symbol and hide it */
+    &:after {
+      content: url(/assets/icons/checkmark-symbol.svg);
+      display: none;
+    }
+  }
+
+  /* When checked - display the checkmark container styles */
+  &__radio input:checked ~ .checkmark {
+    background-color: $van-gogh-blue;
+    // box-shadow: 0 1px 5px 0 #9DA5D5;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  /* When checked - display the symbol */
+  &__radio input:checked ~ .checkmark:after {
+    display: block;
+    margin-left: rem(3px);
+    margin-top: rem(1px);
+  }
+}
