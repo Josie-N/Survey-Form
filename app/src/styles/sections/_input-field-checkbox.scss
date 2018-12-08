@@ -50,13 +50,9 @@
 
   /* Create a custom radio button */
 
-  .checkmark-1 {
+  .checkmark {
     /* Create the small circle container that the checkmark will be displayed in */
     position: absolute;
-    top:  0;
-    left: 0;
-    width: rem(20px); height: rem(20px); 
-    border-radius: 2px;   //different 
     border: 1px solid $raisin-black-w19;
 
     /* Create the indicator */
@@ -67,9 +63,16 @@
       display: none;
     }
   }
+       
+  .checkmark-square {
+    top:  0;
+    left: 0;
+    width: rem(20px); height: rem(20px); 
+    border-radius: 2px;   //different 
+  }
 
   /* When checked - display the checkmark container styles */
-  &__checkbox input:checked ~ .checkmark-1 {
+  &__checkbox input:checked ~ .checkmark {
     background-color: $van-gogh-blue;
     // box-shadow: 0 1px 5px 0 #9DA5D5; 
     border: none;
@@ -77,9 +80,12 @@
   }
 
   /* When checked - display the symbol */
-  &__checkbox input:checked ~ .checkmark-1:after {
+  &__checkbox input:checked ~ .checkmark:after {
     display: block;
-    margin-left: rem(3px);
-    margin-top: rem(1px);
+  }
+
+  &__checkbox input:checked ~ .checkmark-square:after {
+    margin-left: rem(2px);
+    // margin-top: rem(1px);
   }
 }

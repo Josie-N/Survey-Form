@@ -54,10 +54,6 @@
   .checkmark {
     /* Create the small circle container that the checkmark will be displayed in */
     position: absolute;
-    top: -1px;
-    left: 0;
-    width: rem(22px); height: rem(22px); 
-    border-radius: 50%;
     border: 1px solid $raisin-black-w19;
 
     /* Create the indicator */
@@ -67,6 +63,13 @@
       content: url(/assets/icons/checkmark-symbol.svg);
       display: none;
     }
+  }
+
+  .checkmark-circle {
+    top: -1px;
+    left: 0;
+    width: rem(22px); height: rem(22px); 
+    border-radius: 50%;  //different 
   }
 
   /* When checked - display the checkmark container styles */
@@ -80,6 +83,9 @@
   /* When checked - display the symbol */
   &__radio input:checked ~ .checkmark:after {
     display: block;
+  }
+
+  &__radio input:checked ~ .checkmark-circle:after {
     margin-left: rem(3px);
     margin-top: rem(1px);
   }
