@@ -39,6 +39,11 @@
     border-radius: 2px;   
   }
 
+  // Re-align Checkbox Button in 2 column layout
+  .checkmark-align {
+    top: 2px;
+  }
+
   /*  ---------------------------------------------- */
 
   /* Label styles (now acting as a container/ wrapper)  ---- */
@@ -51,15 +56,15 @@
       Flexbox was not working, this was my alternative 
     */
     position: relative;
-    bottom: rem(3px);
-
+    // bottom: rem(3px);
+ 
     padding-left: $space-36;
 
     //  Text inside element cannot be selected 
-    // -webkit-user-select: none;
-    // -moz-user-select: none;
-    // -ms-user-select: none;
-    // user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     cursor: pointer;
 
@@ -73,12 +78,19 @@
 
     //  On mouse-over, add a blue border color 
     &:hover {
-      input ~ .checkmark {
-        border: 1px solid $van-gogh-blue;
+      color: $raisin-black-b60;
+      transition: color 0.2s ease;
+
+        input ~ .checkmark {
+          border: 1px solid $van-gogh-blue;
+          transition: border 0.2s ease;
         }
       }
     }
 
+  &__inner-2-col {
+    display: grid;
+  }
 
   //  When checked - display the checkmark container styles 
   &__inner input:checked ~ .checkmark {

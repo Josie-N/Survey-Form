@@ -28,7 +28,7 @@
     <form id="survey-form" class="form" action="index.html" method="post">
       <!--  Question 1  -->
       <div class="question-container">
-        <label class="question-container__label" 
+        <label class="question-container__label question-container__label-small" 
                for="name">
                <span><abbr title="required">*</abbr></span>1. First Name
         </label>
@@ -39,11 +39,11 @@
                placeholder="Your first name"
                spellcheck="false"
                autocomplete="off" 
-               required>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
+               required autofocus>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
       </div>
       <!--  Question 2  -->
       <div class="question-container">
-        <label class="question-container__label" 
+        <label class="question-container__label question-container__label-small" 
                for="email">
                <abbr title="required">*</abbr>2. Email Address
         </label>
@@ -58,7 +58,7 @@
       </div>
       <!--  Question 3  -->
       <div class="question-container">
-        <label class="question-container__label" 
+        <label class="question-container__label question-container__label-small" 
                for="number">
                <abbr title="required">*</abbr>3. What is your age?
         </label>
@@ -74,7 +74,7 @@
       </div>
       <!--  Question 4  -->
       <div class="question-container">
-        <label class="question-container__label">
+        <label class="question-container__label question-container__label-small">
                <abbr title="required">*</abbr>4. Which option best describes your role? 
         </label>
         <select class="question-container__select" id="dropdown">
@@ -88,7 +88,7 @@
       </div>
       <!--  Question 5  -->
       <div class="question-container">
-        <label class="question-container__label-large">
+        <label class="question-container__label question-container__label-large">
                <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
         </label>
         
@@ -115,7 +115,7 @@
       </div>
       <!--  Question 6  -->
       <div class="question-container">
-          <label class="question-container__label-large">
+          <label class="question-container__label question-container__label-large">
             6. What do you like most about our online courses? 
           </label>
           
@@ -148,67 +148,79 @@
             </div>
         </div>
       <!--  Question 7  -->
-      <div class="question-container">
-          <label class="question-container__label-large">
-            7. Which of our Certifications do you think should be improved in the future?
-          </label>
-          
+      <div class="question-container question-container-2-col">
+        <label class="question-container__label question-container__label-large">
+          7. Which of our Certifications do you think should be improved in the future?
+        </label>
+
+        <div class="question-container__answer-option-col-1">
           <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Responsive Web Design
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Responsive Web Design</span>
               <input type="checkbox" name="reply-3" value="responsive-web-design"/>
-              <span class="checkmark checkmark-square"></span>
+              <span class="checkmark checkmark-square checkmark-align"></span>
             </label>
           </div>
   
           <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Javascript Algorithms and Data Structures
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Javascript Algorithms and Data Structures</span>
               <input type="checkbox" name="reply-3" value="JS-algorithms-data"/>
-              <span class="checkmark checkmark-square"></span>
+              <span class="checkmark checkmark-square checkmark-align"></span>
             </label>
           </div>
 
           <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Front End Libraries
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Front End Libraries</span>
               <input type="checkbox" name="reply-3" value="front-end-libraries"/>
-              <span class="checkmark checkmark-square"></span>
+              <span class="checkmark checkmark-square checkmark-align"></span>
             </label>
           </div>
 
           <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Data Visualization 
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Data Visualization</span> 
               <input type="checkbox" name="reply-3" value="data-visualization"/>
-              <span class="checkmark checkmark-square"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Apis And Microservices 
-              <input type="checkbox" name="reply-3" value="apis-and-microservices"/>
-              <span class="checkmark checkmark-square"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Information Security and Quality Assurance
-              <input type="checkbox" name="reply-3" value="information-security-QA"/>
-              <span class="checkmark checkmark-square"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Coding Interview Prep
-              <input type="checkbox" name="reply-3" value="code-interview-prep"/>
-              <span class="checkmark checkmark-square"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Additional Courses
-              <input type="checkbox" name="reply-3" value="additional-courses"/>
-              <span class="checkmark checkmark-square"></span>
+              <span class="checkmark checkmark-square checkmark-align"></span>
             </label>
           </div>
         </div>
+
+        <div class="question-container__answer-option-col-2">
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Apis And Microservices</span>
+              <input type="checkbox" name="reply-3" value="apis-and-microservices"/>
+              <span class="checkmark checkmark-square checkmark-align"></span>
+            </label>
+          </div>
+
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Information Security and Quality Assurance</span>
+              <input type="checkbox" name="reply-3" value="information-security-QA"/>
+              <span class="checkmark checkmark-square checkmark-align"></span>
+            </label>
+          </div>
+
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Coding Interview Prep</span>
+              <input type="checkbox" name="reply-3" value="code-interview-prep"/>
+              <span class="checkmark checkmark-square checkmark-align"></span>
+            </label>
+          </div>
+
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__inner question-container__inner-2-col">
+              <span class="question-container__option">Additional Courses</span>
+              <input type="checkbox" name="reply-3" value="additional-courses"/>
+              <span class="checkmark checkmark-square checkmark-align"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
