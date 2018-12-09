@@ -18,7 +18,7 @@
 
     // Add the symbol and initially hide it
     &:after {
-      content: url(/assets/icons/checkmark-symbol.svg);
+      content: url(../../assets/icons/checkmark-symbol.svg);
       display: none;
     }
   }

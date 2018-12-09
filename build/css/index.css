@@ -157,31 +157,31 @@ table {
 */
 @font-face {
   font-family: 'IBM Plex Sans Regular';
-  src: url("../../../../assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'IBM Plex Sans Regular Italic';
-  src: url("../../../../assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+  src: url("../../assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'IBM Plex Sans Medium';
-  src: url("../../../../assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
+  src: url("../../assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'IBM Plex Sans Medium Italic';
-  src: url("../../../../assets/fonts/IBMPlexSans-MediumItalic.woff2") format("woff2");
+  src: url("../../assets/fonts/IBMPlexSans-MediumItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'TTCommons Regular';
-  src: url("../../../../assets/fonts/TTCommons-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/TTCommons-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
@@ -311,7 +311,7 @@ input[type=number]::-webkit-outer-spin-button {
   .header_logo {
     margin-top: 3rem;
     height: 2.75rem;
-    background: url(../../../../assets/logo/survey-form-FCC-logo-tablet.svg) no-repeat;
+    background: url(../../assets/logo/survey-form-FCC-logo-tablet.svg) no-repeat;
     background-position: 0.75rem bottom;
     opacity: 0.8; }
   .header:after {
@@ -405,7 +405,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     border: 1px solid #525252; }
     .question-container .checkmark:after {
-      content: url(/assets/icons/checkmark-symbol.svg);
+      content: url(../../assets/icons/checkmark-symbol.svg);
       display: none; }
   .question-container .checkmark-circle {
     top: -1px;
