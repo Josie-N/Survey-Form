@@ -1,0 +1,36 @@
+/*
+⎟  
+⎟   Input field  —  shared styles
+⎟ 
+*/
+ 
+  .question-container {
+    margin-bottom: $space-90;
+
+    &__answer-option-cell {
+      height: $space-24;
+      margin-bottom: $space-12;
+    }
+
+    // Label Styles  —  for all Q's
+
+    //  Needs to become block or inline-block to accept 
+    //  a margin-bottom and occupy the entire width of their parent elements    
+    &__label,
+    &__label-large,
+    &__input {
+      display: block;
+    }
+
+    &__label {
+      @extend %font-sub-heading-2;
+    }
+
+    &__label-small {
+      margin-bottom: $space-12;
+    }
+
+    &__label-large {
+      margin-bottom: $space-24;
+    }
+  }  

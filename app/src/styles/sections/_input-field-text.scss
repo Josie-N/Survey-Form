@@ -1,92 +1,79 @@
+/*
+⎟  
+⎟   Input field  —  text field styles
+⎟ 
+*/
 
-#survey-form {
 
-  margin: $space-96 auto; 
-  max-width: rem(417px);
+.question-container {
 
-  .question-container {
-    margin-bottom: $space-90;
+  //  Style the text input fields  —  for Q1, Q2, Q3
 
-    &__label,
-    &__input {
-      display: block;
-    }
+  &__input {
+    @extend %font-body-text-bold;
 
-    &__label {
-      @extend %font-sub-heading-2;
-      margin-bottom: $space-12;
-    }
+    height: $space-36; width: rem(316px);
+    border: 1px solid $platinum-gray-b34;
+    padding-left: rem(17px);
 
-    &__input {
-      @extend %font-body-text-bold;
-
-      height: $space-36; width: rem(316px);
-      border: 1px solid $platinum-gray-b34;
-      padding-left: rem(17px);
-
-      //  changes default placeholder text style to a different font
-      &::placeholder {
-        @extend %font-body-text;
-      }
-
-      //  changes placeholder text color on focus
-      &:focus::-webkit-input-placeholder { 
-        color: $raisin-black-b60;
-      }
-
-      input:focus:-moz-placeholder {
-        color: $raisin-black-b60;
-      }
-
-      //  changes color to the part of a document that has been 
-      //  highlighted by the user 
-      &::selection {
-        background: $van-gogh-blue;
-        color: $plain-white;
-      }
-
-      &:hover {
-        border: 1px solid $raisin-black-w40;
-        transition: border 0.2s linear;
-      }
-
-      &:focus {
-        border: 2px solid $van-gogh-blue;
-        @extend %font-body-text-bold; 
-        transition: border 0.1s linear;
-      }
-    }
-
-    &__select {
+    //  changes default placeholder text style to a different font
+    &::placeholder {
       @extend %font-body-text;
-      height: $space-36; width: rem(316px);
-      padding-left: rem(17px);
+    }
 
-      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 99% 50%;
-      
-      /* 
-         appearance = display an element using platform-native styling 
-         appearance: none; = the default appearance can be 
-         entirely redefined using other CSS properties  
-      */
-      
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
+    //  changes placeholder text color on focus
+    &:focus::-webkit-input-placeholder { 
+      color: $raisin-black-b60;
+    }
 
-      border-radius: 0px;
-      -webkit-border-radius: 0px;
-      outline-width: 0;
-      
-      border: none;
+    input:focus:-moz-placeholder {
+      color: $raisin-black-b60;
+    }
 
-      border-bottom: 1px solid $platinum-gray-b34;
+    &:hover {
+      border: 1px solid $raisin-black-w40;
+      transition: border 0.2s linear;
+    }
 
-      &:focus {
-        @extend %font-body-text-bold; 
-        border-bottom: 2px solid $van-gogh-blue;
-        transition: border-bottom 0.1s linear;
-      }
+    &:focus {
+      border: 2px solid $van-gogh-blue;
+      @extend %font-body-text-bold; 
+      transition: border 0.1s linear;
+    }
+  }
+
+  //  Style the text input fields  —  for Q4
+
+  &__select {
+    @extend %font-body-text;
+    height: $space-36; width: rem(316px);
+    padding-left: rem(17px);
+
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 99% 50%;
+    
+    /* 
+        appearance = display an element using platform-native styling 
+        appearance: none; = the default appearance can be 
+        entirely redefined using other CSS properties  
+    */
+    
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    outline-width: 0;
+    
+    border: none;
+
+    border-bottom: 1px solid $platinum-gray-b34;
+
+    &:focus {
+      @extend %font-body-text-bold; 
+      border-bottom: 2px solid $van-gogh-blue;
+      transition: border-bottom 0.1s linear;
     }
   }
 }
+
