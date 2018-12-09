@@ -15,12 +15,20 @@ body {
   font-size: $font-size-base;
 }
 
+#survey-form {
+  margin: $space-96 auto; 
+  max-width: rem(417px); 
+}
+
+
+//  Removes the default bullet style from list elements
+
 ul, li {
   list-style-type: none;
 }
 
-//  make the asterisk larger using a different font size
-//  from <abbr title="">  
+//  Makes the asterisk larger using a different font size
+//  Selector from <abbr title="">  
 
 abbr[title] {
   text-decoration: none;
@@ -35,7 +43,7 @@ input {
   }
 }
 
-//   Remove the yellow background after the user 
+//   Removes the yellow background after the user 
 //   adds a value into an input field.
 
 input:-webkit-autofill,
@@ -47,10 +55,18 @@ input:-webkit-autofill:active  {
 
 
 //   Removes number input spinners (arrows)
-//   when trying to add your age
+//   when trying to add your age.
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+//   Changes color to the part of a document that has been 
+//   highlighted by the user. 
+
+::selection {
+  background: $van-gogh-blue;
+  color: $plain-white;
 }
