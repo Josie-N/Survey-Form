@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parallelshell 'npm run scss' 'npm run browser-sync'",
-    "browser-sync": "browser-sync start --server --files app/**/* build/**/* --startPath app/src",
+    "browser-sync": "browser-sync start --server --files app/**/* build/**/*",
     "scss": "node-sass --watch app/src/styles -o build/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
