@@ -2,7 +2,7 @@
 <html lang="en">
   <head profile="/favicon.ico">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="Lightweight, responsive survey form template, created and design by Josie Nagy.">
 
     <!-- Favicon head tag -->
@@ -29,203 +29,217 @@
         <div class="header_logo"></div>
       </div>
     </header>
-    <form id="survey-form" class="form" action="index.html" method="post">
-      <!--  Question 1  -->
-      <div class="question-container">
-        <label class="question-container__label question-container__label-small" 
-               for="name">
-               <span><abbr title="required">*</abbr></span>1. First Name
-        </label>
-        <input class="question-container__input" 
-               id="name" 
-               type="text" 
-               name="user_name"  
-               placeholder="Your first name"
-               spellcheck="false"
-               autocomplete="off" 
-               required autofocus>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
-      </div>
-      <!--  Question 2  -->
-      <div class="question-container">
-        <label class="question-container__label question-container__label-small" 
-               for="email">
-               <abbr title="required">*</abbr>2. Email Address
-        </label>
-        <input class="question-container__input" 
-               id="email" 
-               type="email"
-               name="user_email" 
-               placeholder="Your email address"
-               spellcheck="false"
-               autocomplete="off" 
-               required>
-      </div>
-      <!--  Question 3  -->
-      <div class="question-container">
-        <label class="question-container__label question-container__label-small" 
-               for="number">
-               <abbr title="required">*</abbr>3. What is your age?
-        </label>
-        <input class="question-container__input" 
-               id="number" 
-               type="number" 
-               name="user_age" 
-               placeholder="Your age" 
-               min="2000-01-01" max="2018-11-01" 
-               spellcheck="false"
-               autocomplete="off"
-               required>
-      </div>
-      <!--  Question 4  -->
-      <div class="question-container">
-        <label class="question-container__label question-container__label-small">
-               <abbr title="required">*</abbr>4. Which option best describes your role? 
-        </label>
-        <select class="question-container__select" id="dropdown">
-          <option value="please-select" disabled selected>Please select</option>
-          <option value="student">Student</option>
-          <option value="full-time-position">Full Time Position</option>
-          <option value="part-time-position">Part Time Position</option>
-          <option value="prefer-not-to-say">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <!--  Question 5  -->
-      <div class="question-container">
-        <label class="question-container__label question-container__label-large">
-               <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
-        </label>
-        
-        <div class="question-container__answer-option-cell">
-          <label class="question-container__inner">Definitely 
-            <input type="radio" name="reply" value="reply_yes"/>  <!-- name attribute - how the data is sent back to the server -->
-            <span class="checkmark checkmark-circle"></span>
+    <section class="survey-container">
+      <form id="survey-form" class="form" action="index.html" method="post">
+        <!--  Question 1  -->
+        <div class="question-container">
+          <label class="question-container__label question-container__label-small" 
+                for="name">
+                <span><abbr title="required">*</abbr></span>1. First Name
           </label>
+          <input class="question-container__input" 
+                id="name" 
+                type="text" 
+                name="user_name"  
+                placeholder="Your first name"
+                spellcheck="false"
+                autocomplete="off" 
+                required autofocus>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
         </div>
-
-        <div class="question-container__answer-option-cell">
-          <label class="question-container__inner">Maybe
-            <input type="radio" name="reply" value="reply_maybe"/>
-            <span class="checkmark checkmark-circle"></span>
+        <!--  Question 2  -->
+        <div class="question-container">
+          <label class="question-container__label question-container__label-small" 
+                for="email">
+                <abbr title="required">*</abbr>2. Email Address
           </label>
+          <input class="question-container__input" 
+                 id="email" 
+                 type="email"
+                 name="user_email" 
+                 placeholder="Your email address"
+                 spellcheck="false"
+                 autocomplete="off" 
+                 required>
         </div>
-
-        <div class="question-container__answer-option-cell">
-          <label class="question-container__inner">Not sure
-            <input type="radio" name="reply" value="reply_no"/>
-            <span class="checkmark checkmark-circle"></span>
+        <!--  Question 3  -->
+        <div class="question-container">
+          <label class="question-container__label question-container__label-small" 
+                for="number">
+                <abbr title="required">*</abbr>3. What is your age?
           </label>
+          <input class="question-container__input" 
+                 id="number" 
+                 type="number" 
+                 name="user_age" 
+                 placeholder="Your age" 
+                 min="2000-01-01" max="2018-11-01" 
+                 spellcheck="false"
+                 autocomplete="off"
+                 required>
         </div>
-      </div>
-      <!--  Question 6  -->
-      <div class="question-container">
+        <!--  Question 4  -->
+        <div class="question-container">
+          <label class="question-container__label question-container__label-small">
+                <abbr title="required">*</abbr>4. Which option best describes your role? 
+          </label>
+          <select class="question-container__select" id="dropdown">
+            <option value="please-select" disabled selected>Please select</option>
+            <option value="student">Student</option>
+            <option value="full-time-position">Full Time Position</option>
+            <option value="part-time-position">Part Time Position</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!--  Question 5  -->
+        <div class="question-container">
           <label class="question-container__label question-container__label-large">
-            6. What do you like most about our online courses? 
+                <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
           </label>
           
           <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Challenges
-              <input type="radio" name="reply-2" value="challenges"/>
-              <span class="checkmark checkmark-circle"></span>
-            </label>
-          </div>
-  
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Projects
-              <input type="radio" name="reply-2" value="projects"/>
-              <span class="checkmark checkmark-circle"></span>
-            </label>
-          </div>
-  
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner">Community
-              <input type="radio" name="reply-2" value="reply_no"/>
+            <label class="question-container__inner">Definitely 
+              <input type="radio" name="reply" value="reply_yes"/>  <!-- name attribute - how the data is sent back to the server -->
               <span class="checkmark checkmark-circle"></span>
             </label>
           </div>
 
           <div class="question-container__answer-option-cell">
-              <label class="question-container__inner">Open Source
+            <label class="question-container__inner">Maybe
+              <input type="radio" name="reply" value="reply_maybe"/>
+              <span class="checkmark checkmark-circle"></span>
+            </label>
+          </div>
+
+          <div class="question-container__answer-option-cell">
+            <label class="question-container__inner">Not sure
+              <input type="radio" name="reply" value="reply_no"/>
+              <span class="checkmark checkmark-circle"></span>
+            </label>
+          </div>
+        </div>
+        <!--  Question 6  -->
+        <div class="question-container">
+            <label class="question-container__label question-container__label-large">
+              6. What do you like most about our online courses? 
+            </label>
+            
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Challenges
+                <input type="radio" name="reply-2" value="challenges"/>
+                <span class="checkmark checkmark-circle"></span>
+              </label>
+            </div>
+    
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Projects
+                <input type="radio" name="reply-2" value="projects"/>
+                <span class="checkmark checkmark-circle"></span>
+              </label>
+            </div>
+    
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Community
                 <input type="radio" name="reply-2" value="reply_no"/>
                 <span class="checkmark checkmark-circle"></span>
               </label>
             </div>
+
+            <div class="question-container__answer-option-cell">
+                <label class="question-container__inner">Open Source
+                  <input type="radio" name="reply-2" value="reply_no"/>
+                  <span class="checkmark checkmark-circle"></span>
+                </label>
+              </div>
+          </div>
+        <!--  Question 7  -->
+        <div class="question-container question-container-2-col">
+          <label class="question-container__label question-container__label-large">
+            7. Which of our Certifications do you think should be improved in the future?
+          </label>
+
+          <div class="question-container__answer-option-col-1">
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Responsive Web Design</span>
+                <input type="checkbox" name="reply-3" value="responsive-web-design"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+    
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Javascript Algorithms and Data Structures</span>
+                <input type="checkbox" name="reply-3" value="JS-algorithms-data"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Front End Libraries</span>
+                <input type="checkbox" name="reply-3" value="front-end-libraries"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Data Visualization</span> 
+                <input type="checkbox" name="reply-3" value="data-visualization"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="question-container__answer-option-col-2">
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Apis And Microservices</span>
+                <input type="checkbox" name="reply-3" value="apis-and-microservices"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Information Security and Quality Assurance</span>
+                <input type="checkbox" name="reply-3" value="information-security-QA"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Coding Interview Prep</span>
+                <input type="checkbox" name="reply-3" value="code-interview-prep"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner question-container__inner-2-col">
+                <span class="question-container__option">Additional Courses</span>
+                <input type="checkbox" name="reply-3" value="additional-courses"/>
+                <span class="checkmark checkmark-square checkmark-align"></span>
+              </label>
+            </div>
+          </div>
         </div>
-      <!--  Question 7  -->
-      <div class="question-container question-container-2-col">
-        <label class="question-container__label question-container__label-large">
-          7. Which of our Certifications do you think should be improved in the future?
-        </label>
-
-        <div class="question-container__answer-option-col-1">
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Responsive Web Design</span>
-              <input type="checkbox" name="reply-3" value="responsive-web-design"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-  
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Javascript Algorithms and Data Structures</span>
-              <input type="checkbox" name="reply-3" value="JS-algorithms-data"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Front End Libraries</span>
-              <input type="checkbox" name="reply-3" value="front-end-libraries"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Data Visualization</span> 
-              <input type="checkbox" name="reply-3" value="data-visualization"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
+        <!--  Question 8  -->
+        <div class="question-container">
+          <label for="feedback" class="question-container__label question-container__label-large">
+            8. Any comments or suggestions? 
+          </label>
+          <textarea class=""
+                    name="comment" 
+                    placeholder="Your feedback helps us learn about how we can improve our courses." 
+                    maxlength="700"
+                    spellcheck="false"
+                    autocomplete="off"></textarea>
         </div>
-
-        <div class="question-container__answer-option-col-2">
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Apis And Microservices</span>
-              <input type="checkbox" name="reply-3" value="apis-and-microservices"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Information Security and Quality Assurance</span>
-              <input type="checkbox" name="reply-3" value="information-security-QA"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Coding Interview Prep</span>
-              <input type="checkbox" name="reply-3" value="code-interview-prep"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-
-          <div class="question-container__answer-option-cell">
-            <label class="question-container__inner question-container__inner-2-col">
-              <span class="question-container__option">Additional Courses</span>
-              <input type="checkbox" name="reply-3" value="additional-courses"/>
-              <span class="checkmark checkmark-square checkmark-align"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </form>
+      </form>
+    </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
