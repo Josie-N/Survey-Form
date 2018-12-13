@@ -1,0 +1,66 @@
+.question-container {
+  &__comment-box {
+    @extend %font-body-text-bold;
+
+    z-index: 1;
+
+    resize: vertical;
+    // 100% of the parent container
+    width: 100%;  // 417px
+
+    max-width: rem(417px);
+    padding: $space-24 rem(28px) $space-36 $space-24;
+
+    border: 1px solid $raisin-black-w19;
+    border-radius: 3px;
+
+    background: $plain-white;
+
+    min-height: rem(120px);
+    max-height: rem(360px);
+
+    &::-webkit-input-placeholder {  /* Chrome/ Opera/ Safari */
+      @extend %font-body-text-italic;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $van-gogh-blue;
+      transition: border 0.2s linear;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: rem(20px);
+      background-color: $plain-white;
+    }
+
+    &::-webkit-scrollbar {
+      width: rem(7px);
+      height: rem(10px);
+      background-color: $plain-white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: rem(10px);
+      background-color: $platinum-gray;
+    }
+
+    &::-webkit-scrollbar-corner { 
+      background-color: transparent;
+      background-color: white;  
+      display: none;      //  not working 
+    }
+    
+    &::after {
+      z-index: 2;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      height: 100%;
+      width: 100%;
+      background: red;
+    }
+  }
+}
