@@ -73,12 +73,20 @@ $line-height-extra-small  :  rem(17px);
 }
 
 
-
 %font-body-text {
   font-family:    $font-stack-IBM_Plex_Sans_Regular;
   font-size:                        $font-size-base;
   line-height:                    $line-height-base; 
   color:                           $raisin-black-w19;
+  letter-spacing:                            -0.2px;
+}
+
+
+%font-body-text-italic {
+  font-family:     $font-stack-IBM_Plex_Sans_Italic;
+  font-size:                        $font-size-base;
+  line-height:                    $line-height-base; 
+  color:                          $raisin-black-w19;
   letter-spacing:                            -0.2px;
 }
 
