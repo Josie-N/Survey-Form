@@ -15,7 +15,7 @@
 ⎟    How it was calculated:
 ⎟
 ⎟    If base font size: 16px
-⎟    Then base line height: 24px (ratio = 1.5)
+⎟    Then base line height: 16px * 1.5 = 24px (ratio = 1.5)
 ⎟
 ⎟    (base line height) 24px / 2 = 12px  (baseline value)
 ⎟    baseline value X 2 = next upper value
@@ -28,7 +28,7 @@
 $space-6:     rem(6px);   // 12 / 2
 $space-12:   rem(12px);   // baseline 
 $space-24:   rem(24px);   // 12 * 2
-$space-36:   rem(36px);
+$space-36:   rem(36px);   // 12 * 2 * 2
 
 $space-48:   rem(48px);
 $space-60:   rem(60px);
