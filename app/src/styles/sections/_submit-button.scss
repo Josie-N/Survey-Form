@@ -14,8 +14,10 @@
     box-shadow: 4px 4px 0px 0px #00AB9A;
 
     &:hover {
+      right: 2px;
+      top: -2px;
       box-shadow: 7px 7px 0px 0px #00AB9A;
-      transition: box-shadow .4s;
+      transition: box-shadow .4s, position .4s;
     }
 
     &:focus {
@@ -23,7 +25,7 @@
       outline-offset: 1px;
       box-shadow: none;
     }
-    
+
     &:active {
       box-shadow: none;
       position: relative;

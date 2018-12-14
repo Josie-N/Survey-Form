@@ -1,8 +1,10 @@
 /*
 ⎟  
-⎟   Input field  —  shared styles
+⎟   Input field  —  shared styles that all questions have in common
 ⎟ 
 */
+
+
 .question-container {
   margin-bottom: $space-90;
 
@@ -38,11 +40,17 @@
   &__option {
     letter-spacing: -0.4px;
   }
-}  
 
+  &:nth-child(8n) {
+    margin-bottom: $space-120;  
+  } 
+} 
 .question-container-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: rem(27px);
 }
  
+// nth-child vs nth-of-type 
+// Reference: 
+// https://stackoverflow.com/questions/24657555/what-is-the-difference-between-first-child-and-first-of-type
