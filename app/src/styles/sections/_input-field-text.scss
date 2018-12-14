@@ -67,13 +67,12 @@
     
     border: none;
 
-    border-bottom: 1px solid $platinum-gray-b34;
-
-    &:focus {
-      @extend %font-body-text-bold; 
-      border-bottom: 2px solid $van-gogh-blue;
-      transition: border-bottom 0.1s linear;
+      &:focus {
+        @extend %font-body-text-bold; 
+        border-bottom: 2px solid $van-gogh-blue;
+        transition: border-bottom 0.1s linear;
+      }
     }
   }
-}
+
 

@@ -26,7 +26,7 @@ $font-size-extra-large  :   rem(36px);
 $font-size-large        :   rem(24px);
 $font-size-medium       :   rem(20px);
 $font-size-base         :        16px;   // deadlock situation: _typography.scss and _PX-to-EM.scss both need to each other to complete the task   
-$font-size-small        :   rem(13px); 
+$font-size-small        :   rem(14px); 
 $font-size-extra-small  : rem(11.4px);
 
 
@@ -106,6 +106,14 @@ $line-height-extra-small  :  rem(17px);
   line-height:                   $line-height-small; 
   color:                             $platinum-gray;
   letter-spacing:                            normal;
+}
+
+%font-small-text-bold {
+  font-family:     $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                       $font-size-small;
+  line-height:                   $line-height-small; 
+  color:                               $pitch-black;
+  letter-spacing:                            0.44px;
 }
 
 
