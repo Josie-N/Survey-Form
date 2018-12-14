@@ -67,12 +67,19 @@
     
     border: none;
 
-    border-bottom: 1px solid $platinum-gray-b34;
+<<<<<<< Updated upstream
+=======
+      &:first-child {
+        border: 1px solid black;
+        @extend %font-body-text;
+      }
 
-    &:focus {
-      @extend %font-body-text-bold; 
-      border-bottom: 2px solid $van-gogh-blue;
-      transition: border-bottom 0.1s linear;
+>>>>>>> Stashed changes
+      &:focus {
+        @extend %font-body-text-bold; 
+        border-bottom: 2px solid $van-gogh-blue;
+        transition: border-bottom 0.1s linear;
+      }
     }
   }
 }
