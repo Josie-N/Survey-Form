@@ -1,0 +1,59 @@
+
+  button {   
+    @extend %font-small-text-bold;
+
+    height: 56px; width: 146px;
+    position: relative;  // needed to move the button shadow at :active
+    top: 0; 
+
+    border: 3px solid $raisin-black;
+
+    // Button - outline style with 3D-like shadow
+    
+    // The easy way - box-shadow with no blur radius
+    box-shadow: 4px 4px 0px 0px #00AB9A;
+
+    &:hover {
+      box-shadow: 7px 7px 0px 0px #00AB9A;
+      transition: box-shadow .4s;
+    }
+
+    &:focus {
+      outline: 3px solid rgba(183,183,183,0.6); // #B7B7B7 - $platinum-gray-b22
+      outline-offset: 1px;
+      box-shadow: none;
+    }
+    
+    &:active {
+      box-shadow: none;
+      position: relative;
+      top: 7px;
+      left: 7px;
+      transition: position .4s;
+    }
+
+    // The hard way - adding a another element using ::after
+    // &::after { 
+    //   z-index: -2;
+    //   content: " ";
+    //   display: block;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   height: 54px;
+    //   width: 144px;
+    //   background: red; 
+    //   transition: all .3s;
+    // }
+  }
+
+
+  /*
+  ⎟  
+  ⎟  Reference:
+  ⎟  How to Create a 3D Button Style
+  ⎟ 
+  ⎟  https://schier.co/blog/2014/03/01/clicky-3d-buttons-with-css.html
+  ⎟ 
+  */ 
+

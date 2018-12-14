@@ -43,6 +43,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  background: none;
+  border: none; }
+
 /*
 ⎟  
 ⎟    Breakpoint Mixins 
@@ -132,10 +136,17 @@ table {
 
 .survey-page-header__time-info-container p {
   font-family: "IBM Plex Sans Regular Italic", cursive;
-  font-size: rem(13px);
+  font-size: rem(14px);
   line-height: rem(20px);
   color: #E0E0E0;
   letter-spacing: normal; }
+
+button {
+  font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: rem(14px);
+  line-height: rem(20px);
+  color: #000000;
+  letter-spacing: 0.44px; }
 
 /*
 ⎟ 
@@ -154,7 +165,7 @@ table {
 ⎟    How it was calculated:
 ⎟
 ⎟    If base font size: 16px
-⎟    Then base line height: 24px (ratio = 1.5)
+⎟    Then base line height: 16px * 1.5 = 24px (ratio = 1.5)
 ⎟
 ⎟    (base line height) 24px / 2 = 12px  (baseline value)
 ⎟    baseline value X 2 = next upper value
@@ -237,10 +248,17 @@ table {
 
 .survey-page-header__time-info-container p {
   font-family: "IBM Plex Sans Regular Italic", cursive;
-  font-size: 0.813rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   color: #E0E0E0;
   letter-spacing: normal; }
+
+button {
+  font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #000000;
+  letter-spacing: 0.44px; }
 
 html {
   font-size: 16px;
@@ -522,3 +540,33 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
     width: 100%;
     background: red; }
+
+button {
+  height: 56px;
+  width: 146px;
+  position: relative;
+  top: 0;
+  border: 3px solid #2A2A2A;
+  box-shadow: 4px 4px 0px 0px #00AB9A; }
+  button:hover {
+    box-shadow: 7px 7px 0px 0px #00AB9A;
+    transition: box-shadow .4s; }
+  button:focus {
+    outline: 3px solid rgba(183, 183, 183, 0.6);
+    outline-offset: 1px;
+    box-shadow: none; }
+  button:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+    left: 7px;
+    transition: position .4s; }
+
+/*
+  ⎟  
+  ⎟  Reference:
+  ⎟  How to Create a 3D Button Style
+  ⎟ 
+  ⎟  https://schier.co/blog/2014/03/01/clicky-3d-buttons-with-css.html
+  ⎟ 
+  */
