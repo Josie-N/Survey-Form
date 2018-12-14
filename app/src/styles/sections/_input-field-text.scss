@@ -67,14 +67,6 @@
     
     border: none;
 
-<<<<<<< Updated upstream
-=======
-      &:first-child {
-        border: 1px solid black;
-        @extend %font-body-text;
-      }
-
->>>>>>> Stashed changes
       &:focus {
         @extend %font-body-text-bold; 
         border-bottom: 2px solid $van-gogh-blue;
@@ -82,5 +74,5 @@
       }
     }
   }
-}
+
 

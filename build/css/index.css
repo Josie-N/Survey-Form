@@ -359,7 +359,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*
 ⎟  
-⎟   Input field  —  shared styles
+⎟   Input field  —  shared styles that all questions have in common
 ⎟ 
 */
 .question-container {
@@ -375,6 +375,8 @@ input[type=number]::-webkit-outer-spin-button {
     grid-column: 1 / span 2; }
   .question-container__option {
     letter-spacing: -0.4px; }
+  .question-container:nth-child(8n) {
+    margin-bottom: 7.5rem; }
 
 .question-container-2-col {
   display: grid;
@@ -418,8 +420,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   outline-width: 0;
-  border: none;
-  border-bottom: 1px solid #A1A1A1; }
+  border: none; }
   .question-container__select:focus {
     border-bottom: 2px solid #3949AB;
     transition: border-bottom 0.1s linear; }
@@ -547,10 +548,13 @@ button {
   position: relative;
   top: 0;
   border: 3px solid #2A2A2A;
+  margin-bottom: 9.75rem;
   box-shadow: 4px 4px 0px 0px #00AB9A; }
   button:hover {
+    right: 2px;
+    top: -2px;
     box-shadow: 7px 7px 0px 0px #00AB9A;
-    transition: box-shadow .4s; }
+    transition: box-shadow .4s, position .4s; }
   button:focus {
     outline: 3px solid rgba(183, 183, 183, 0.6);
     outline-offset: 1px;
