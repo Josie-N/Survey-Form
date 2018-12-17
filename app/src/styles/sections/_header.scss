@@ -61,9 +61,11 @@
       padding: rem(8px) rem(58px) 0px rem(14px);
     }
 
-    //  Hide <span> visually by moving it off-screen
-    //  Screen reads can still hear this element, but visual readers cannot see it
-    //  Resource: https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/ 
+    //  Goal: hide  <span>FreeCodeCamp</span>  visually by moving it off-screen
+    //  Why: Screen readers still need to hear this element, but visual readers 
+    //  don't need to see this <span> because there's already an svg
+    //  Resource 1: https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/ 
+    //  Resource 2: https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content
     .hidden-visibility {
       position: absolute;
       left:     -10000px;
