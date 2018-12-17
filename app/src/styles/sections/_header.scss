@@ -1,3 +1,4 @@
+
 .survey-page-header {
   background: $raisin-black;
   padding: rem(1px);   // collapsing margin issue fixed: https://www.sitepoint.com/collapsing-margins/
@@ -58,6 +59,18 @@
       box-shadow: rem(4px) rem(-5px) rem(34px) rem(1px) rgba(36,36,36,0.67);
       height: rem(60px);
       padding: rem(8px) rem(58px) 0px rem(14px);
+    }
+
+    //  Hide <span> visually by moving it off-screen
+    //  Screen reads can still hear this element, but visual readers cannot see it
+    //  Resource: https://www.accessibility-developer-guide.com/examples/hiding-elements/visually/ 
+    .hidden-visibility {
+      position: absolute;
+      left:     -10000px;
+      top:      auto;
+      width:    1px;
+      height:   1px;
+      overflow: hidden;
     }
   }
 

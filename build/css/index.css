@@ -340,6 +340,13 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0.25rem -0.313rem 2.125rem 0.063rem rgba(36, 36, 36, 0.67);
     height: 3.75rem;
     padding: 0.5rem 3.625rem 0px 0.875rem; }
+  .survey-page-header__highlight-background .hidden-visibility {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
   .survey-page-header_logo {
     margin-top: 3rem;
     height: 2.75rem;
