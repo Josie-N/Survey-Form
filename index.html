@@ -24,18 +24,20 @@
           <h1>         
             <span>Let us know how we can</span>
             <span>improve</span>
+            <span class="hidden-visibility">freeCodeCamp</span>
           </h1>
         </div>  
-        <div class="survey-page-header_logo"></div>
+        <div class="survey-page-header_logo" alt=""></div>
       </div>
     </header>
-    <section class="survey-page-body">
+    <main class="survey-page-body" role="main">
       <form id="survey-form" class="form" action="index.html" method="post">
+        <ol>
         <!--  Question 1  -->
-        <div class="question-container">
+        <li class="question-container">
           <label class="question-container__label question-container__label-small" 
                 for="name">
-                <span><abbr title="required">*</abbr></span>1. First Name
+                <span><abbr title="Required" aria-hidden="true">*</abbr></span>1. First Name
           </label>
           <input class="question-container__input" 
                 id="name" 
@@ -45,12 +47,12 @@
                 spellcheck="false"
                 autocomplete="off" 
                 required autofocus>  <!-- 'name' attribute is used as a reference when the data is submitted. Only form elements with a name="" attribute will have their values passed when submitting a form. -->  
-        </div>
+        </li>
         <!--  Question 2  -->
-        <div class="question-container">
+        <li class="question-container">
           <label class="question-container__label question-container__label-small" 
                 for="email">
-                <abbr title="required">*</abbr>2. Email Address
+                <abbr title="required" aria-hidden="true">*</abbr>2. Email Address
           </label>
           <input class="question-container__input" 
                  id="email" 
@@ -60,12 +62,12 @@
                  spellcheck="false"
                  autocomplete="off" 
                  required>
-        </div>
+        </li>
         <!--  Question 3  -->
-        <div class="question-container">
+        <li class="question-container">
           <label class="question-container__label question-container__label-small" 
                 for="number">
-                <abbr title="required">*</abbr>3. What is your age?
+                <abbr title="required" aria-hidden="true">*</abbr>3. What is your age?
           </label>
           <input class="question-container__input" 
                  id="number" 
@@ -76,13 +78,13 @@
                  spellcheck="false"
                  autocomplete="off"
                  required>
-        </div>
+        </li>
         <!--  Question 4  -->
-        <div class="question-container">
+        <li class="question-container">
           <label class="question-container__label question-container__label-small">
-                <abbr title="required">*</abbr>4. Which option best describes your role? 
+                <abbr title="required" aria-hidden="true">*</abbr>4. Which option best describes your role? 
           </label>
-          <select class="question-container__select" id="dropdown">
+          <select class="question-container__select" id="dropdown" title="Select box container. Select your career role." >
             <option value="please-select" disabled selected>Please select</option>
             <option value="student">Student</option>
             <option value="full-time-position">Full Time Position</option>
@@ -90,13 +92,13 @@
             <option value="prefer-not-to-say">Prefer not to say</option>
             <option value="other">Other</option>
           </select>
-        </div>
+        </li>
         <!--  Question 5  -->
         <fieldset>
-          <div class="question-container">
-            <label class="question-container__label question-container__label-large">
-                  <abbr title="required">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
-            </label>
+          <li class="question-container">
+            <legend class="question-container__label question-container__label-large">
+                  <abbr title="required" aria-hidden="true">*</abbr>5. How likely is that you would recommend freeCodeCamp to a friend? 
+            </legend>
             
             <div class="question-container__answer-option-cell">
               <label class="question-container__inner">Definitely 
@@ -118,47 +120,47 @@
                 <span class="checkmark checkmark-circle"></span>
               </label>
             </div>
-          </div>
+          </li>
         </fieldset>
         <!--  Question 6  -->
         <fieldset>
-          <div class="question-container">
-              <label class="question-container__label question-container__label-large">
-                6. What do you like most about our online courses? 
+          <li class="question-container">
+            <legend class="question-container__label question-container__label-large">
+              6. What do you like most about our online courses? 
+            </legend>
+            
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Challenges
+                <input type="radio" name="reply-2" value="challenges"/>
+                <span class="checkmark checkmark-circle"></span>
               </label>
-              
-              <div class="question-container__answer-option-cell">
-                <label class="question-container__inner">Challenges
-                  <input type="radio" name="reply-2" value="challenges"/>
-                  <span class="checkmark checkmark-circle"></span>
-                </label>
-              </div>
-      
-              <div class="question-container__answer-option-cell">
-                <label class="question-container__inner">Projects
-                  <input type="radio" name="reply-2" value="projects"/>
-                  <span class="checkmark checkmark-circle"></span>
-                </label>
-              </div>
-      
-              <div class="question-container__answer-option-cell">
-                <label class="question-container__inner">Community
+            </div>
+    
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Projects
+                <input type="radio" name="reply-2" value="projects"/>
+                <span class="checkmark checkmark-circle"></span>
+              </label>
+            </div>
+    
+            <div class="question-container__answer-option-cell">
+              <label class="question-container__inner">Community
+                <input type="radio" name="reply-2" value="reply_no"/>
+                <span class="checkmark checkmark-circle"></span>
+              </label>
+            </div>
+
+            <div class="question-container__answer-option-cell">
+                <label class="question-container__inner">Open Source
                   <input type="radio" name="reply-2" value="reply_no"/>
                   <span class="checkmark checkmark-circle"></span>
                 </label>
-              </div>
-
-              <div class="question-container__answer-option-cell">
-                  <label class="question-container__inner">Open Source
-                    <input type="radio" name="reply-2" value="reply_no"/>
-                    <span class="checkmark checkmark-circle"></span>
-                  </label>
-                </div>
-          </div>
+            </div>
+          </li>
         </fieldset>
         <!--  Question 7  -->
         <fieldset>
-          <div class="question-container question-container-2-col">
+          <li class="question-container question-container-2-col">
             <legend class="question-container__label question-container__label-large">
               7. Which of our Certifications do you think should be improved in the future?
             </legend>
@@ -230,27 +232,33 @@
                 </label>
               </div>
             </div>
-          </div>
+          </li>
         </fieldset>
         <!--  Question 8  -->
-        <div class="question-container">
+        <li class="question-container">
           <label for="feedback" class="question-container__label question-container__label-large">
             8. Any comments or suggestions? 
           </label>
-          <textarea class="question-container__comment-box"
-                    name="comment" 
+          <textarea id="feedback"
+                    class="question-container__comment-box"
+                    name="comment"
+                    title="Textarea container. Type your feedback here." 
                     placeholder="Your feedback helps us learn about how we can improve our courses." 
                     maxlength="700"
                     spellcheck="false"
                     autocomplete="off"></textarea>
-        </div>
+        </li>
         <!--  Submit Button  -->
         <button class="submit-button"
                 type=“submit” 
-                value="Submit">
-                <span>All done!</span></button>
+                value="Submit"
+                alt="Submit Button"
+                role="button">
+                All done!</button>
+        </ol>        
       </form>
-    </section>
+    </main>
+     <!--  FreeCodeCamp HTML Markup Tests  -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
