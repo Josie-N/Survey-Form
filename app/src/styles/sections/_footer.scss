@@ -1,0 +1,22 @@
+.survey-page-footer {
+
+  &__github-icon,
+  &__linkedIn-icon,
+  &__twitter-icon {
+    border: 1px solid blue;
+    display: block; 
+    padding-left: 15px; 
+  }
+
+  &__github-icon { 
+    background: url(/assets/icons/github-logo-survey-form.svg) no-repeat;
+  }
+
+  &__linkedIn-icon {
+    background: url(/assets/icons/likein-logo-survey-form.svg) no-repeat;
+  }
+  
+  &__twitter-icon { 
+    background: url(/assets/icons/twitter-logo-survey-form.svg) no-repeat;
+  }
+}

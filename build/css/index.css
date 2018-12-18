@@ -47,6 +47,9 @@ button {
   background: none;
   border: none; }
 
+a {
+  text-decoration: none; }
+
 /*
 ⎟  
 ⎟    Breakpoint Mixins 
@@ -581,3 +584,16 @@ button {
   ⎟  https://schier.co/blog/2014/03/01/clicky-3d-buttons-with-css.html
   ⎟ 
   */
+.survey-page-footer__github-icon, .survey-page-footer__linkedIn-icon, .survey-page-footer__twitter-icon {
+  border: 1px solid blue;
+  display: block;
+  padding-left: 15px; }
+
+.survey-page-footer__github-icon {
+  background: url(/assets/icons/github-logo-survey-form.svg) no-repeat; }
+
+.survey-page-footer__linkedIn-icon {
+  background: url(/assets/icons/likein-logo-survey-form.svg) no-repeat; }
+
+.survey-page-footer__twitter-icon {
+  background: url(/assets/icons/twitter-logo-survey-form.svg) no-repeat; }
