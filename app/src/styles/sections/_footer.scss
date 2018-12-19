@@ -1,11 +1,60 @@
 .survey-page-footer {
 
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid red;
+
+  &__outer-container {
+    max-width: 416px;
+    margin: 150px 0;
+    // border: 1px solid purple;
+  }
+
+  &__intro {
+    @extend %font-small-text-italic;
+    color: #101010;
+    margin-bottom: $space-24;
+
+    span {
+      position:      relative;
+      color:     $plain-white;
+      padding-left: 16px;    // reposition the text inside ::after container
+
+      // Dark background container that highlights the span text
+      &::after {
+        content: "";
+        display: block;
+        height: $space-24; width: 93px;
+
+        position: absolute;
+        top: -2.6px;
+        left: 7.2px;
+
+        background: $raisin-black;
+        transform:  rotate(-1deg);
+        z-index: -1;
+      }
+    }
+  }
+
+  &__challenge-description {
+    @extend %font-extra-small-text;
+    color: #171717;
+    margin-bottom: $space-24;
+  }
+
+  ul {
+    // border: 1px solid black;
+    display: flex;
+  }
+
   &__github-icon,
   &__linkedIn-icon,
   &__twitter-icon {
     border: 1px solid blue;
     display: block; 
-    padding-left: 15px; 
+    padding-left: 26px; 
   }
 
   &__github-icon { 
