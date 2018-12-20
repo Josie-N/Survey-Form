@@ -20,6 +20,12 @@ body {
   max-width: rem(417px); 
 }
 
+//  Fix collapsing top margin issue
+//  https://css-tricks.com/what-you-should-know-about-collapsing-margins/
+
+.survey-page-body {
+  padding: 1px;
+}
 
 //  Removes the default bullet style from list elements
 
