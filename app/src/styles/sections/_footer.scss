@@ -1,33 +1,47 @@
-.survey-page-footer {
 
+.survey-page-footer {
+  //   General Footer Styles
+
+  // Center all the footer content 
   display: flex;
   justify-content: center;
 
-  border: 1px solid red;
+  // Add illustration to background 
+  background: url(/assets/images/bubbles_illustration.svg) no-repeat top;
+  background-position: 50.2% 1%;
+
+  // Illustration needs a fixed height to get the position right
+  height: 427px;
+
+
+  //   Main Container Styles 
 
   &__outer-container {
-    max-width: 416px;
-    margin: 150px 0;
-    // border: 1px solid purple;
+    max-width: 26.063rem;             // for consistency - same width as the <form> container
+    margin: 158px auto 142px auto;
+    justify-content: flex-start;      // container stays on the right side even when resizing
   }
+
+  //   1st & 2nd Paragraph Styles 
 
   &__intro {
     @extend %font-small-text-italic;
     color: #101010;
-    margin-bottom: $space-24;
+    margin-bottom: 22px;
 
     span {
-      position:      relative;
-      color:     $plain-white;
-      padding-left: 16px;    // reposition the text inside ::after container
+      position: relative;       //  *acts a bounding box for ::after 
+      color: $plain-white;
+      padding-left: 16px;       // reposition the text to match the ::after container positioning
+      z-index: 1;
 
-      // Dark background container that highlights the span text
+      // Dark background container that highlights the span text (Josie Nagy)
       &::after {
         content: "";
         display: block;
         height: $space-24; width: 93px;
 
-        position: absolute;
+        position: absolute;     //  *see: https://internetingishard.com/html-and-css/advanced-positioning/  >  (relatively) absolute positioning
         top: -2.6px;
         left: 7.2px;
 
@@ -42,19 +56,38 @@
     @extend %font-extra-small-text;
     color: #171717;
     margin-bottom: $space-24;
+
+    .divider-line {
+      margin: 0 4px;
+    }
+
+    .description-FCC {
+      @extend %font-extra-small-text-italic;
+      color: #171717;
+    }
   }
 
-  ul {
-    // border: 1px solid black;
+  //   Social Icons Styles  -  layout & positioning 
+
+
+  &__social-container {
     display: flex;
+    
+    position: relative;
+    left: -5px;
   }
 
   &__github-icon,
   &__linkedIn-icon,
   &__twitter-icon {
-    border: 1px solid blue;
     display: block; 
     padding-left: 26px; 
+    margin-right: 20px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.35s;
+    }
   }
 
   &__github-icon { 

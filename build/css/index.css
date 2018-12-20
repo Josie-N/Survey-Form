@@ -154,7 +154,14 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: rem(11.4px);
-  line-height: rem(17.5px);
+  line-height: rem(18px);
+  color: #FFFFFF;
+  letter-spacing: normal; }
+
+.survey-page-footer__challenge-description .description-FCC {
+  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: rem(11.4px);
+  line-height: rem(18px);
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -273,7 +280,14 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: 0.713rem;
-  line-height: 1.094rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+  letter-spacing: normal; }
+
+.survey-page-footer__challenge-description .description-FCC {
+  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: 0.713rem;
+  line-height: 1.125rem;
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -294,6 +308,9 @@ body {
 #survey-form {
   margin: 6rem auto;
   max-width: 26.063rem; }
+
+.survey-page-body {
+  padding: 1px; }
 
 ul, li {
   list-style-type: none; }
@@ -383,7 +400,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*
 ⎟  
-⎟   Input field  —  shared styles that all questions have in common
+⎟   Input fields  —  shared styles that all questions have in common
 ⎟ 
 */
 .question-container {
@@ -601,17 +618,21 @@ button {
 .survey-page-footer {
   display: flex;
   justify-content: center;
-  border: 1px solid red; }
+  background: url(/assets/images/bubbles_illustration.svg) no-repeat top;
+  background-position: 50.2% 1%;
+  height: 427px; }
   .survey-page-footer__outer-container {
-    max-width: 416px;
-    margin: 150px 0; }
+    max-width: 26.063rem;
+    margin: 158px auto 142px auto;
+    justify-content: flex-start; }
   .survey-page-footer__intro {
     color: #101010;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 22px; }
     .survey-page-footer__intro span {
       position: relative;
       color: #FFFFFF;
-      padding-left: 16px; }
+      padding-left: 16px;
+      z-index: 1; }
       .survey-page-footer__intro span::after {
         content: "";
         display: block;
@@ -626,18 +647,24 @@ button {
   .survey-page-footer__challenge-description {
     color: #171717;
     margin-bottom: 1.5rem; }
-  .survey-page-footer ul {
-    display: flex; }
+    .survey-page-footer__challenge-description .divider-line {
+      margin: 0 4px; }
+    .survey-page-footer__challenge-description .description-FCC {
+      color: #171717; }
+  .survey-page-footer__social-container {
+    display: flex;
+    position: relative;
+    left: -5px; }
   .survey-page-footer__github-icon, .survey-page-footer__linkedIn-icon, .survey-page-footer__twitter-icon {
-    border: 1px solid blue;
     display: block;
-    padding-left: 26px; }
+    padding-left: 26px;
+    margin-right: 20px; }
+    .survey-page-footer__github-icon:hover, .survey-page-footer__linkedIn-icon:hover, .survey-page-footer__twitter-icon:hover {
+      transform: scale(1.1);
+      transition: transform 0.35s; }
   .survey-page-footer__github-icon {
-.survey-page-footer__github-icon {
     background: url(/assets/icons/github-logo-survey-form.svg) no-repeat; }
-
   .survey-page-footer__linkedIn-icon {
     background: url(/assets/icons/likein-logo-survey-form.svg) no-repeat; }
-
   .survey-page-footer__twitter-icon {
     background: url(/assets/icons/twitter-logo-survey-form.svg) no-repeat; }
