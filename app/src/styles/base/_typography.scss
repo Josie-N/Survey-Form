@@ -8,7 +8,7 @@
 */
 
 
-//  Font Stacks   ------------ //
+//  Font Stacks (5)  ------------ //
 
 
 $font-stack-TTCommons: 'TTCommons Regular', Arial, Helvetica, sans-serif;	
@@ -19,7 +19,7 @@ $font-stack-IBM_Plex_Sans_Medium_Italic: 'IBM Plex Sans Medium Italic', 'Avant G
 
 
 
-//  Font Sizes   ------------ //
+//  Font Sizes (6)   ------------ //
 
 
 $font-size-extra-large  :   rem(36px);
@@ -31,7 +31,7 @@ $font-size-extra-small  : rem(11.4px);
 
 
 
-//  Line Heights   ---------- //
+//  Line Heights (6)   ---------- //
 
 
 $line-height-extra-large  :  rem(54px);
@@ -39,12 +39,13 @@ $line-height-large        :  rem(36px);
 $line-height-medium       :  rem(30px);
 $line-height-base         :  rem(24px);
 $line-height-small        :  rem(20px); 
-$line-height-extra-small  :  rem(17px);
+$line-height-extra-small  :  rem(18px);
 
 
 
 //  Font Styles  --------------  //
 
+//  Headings 
 
 %font-main-heading {
   font-family:      $font-stack-TTCommons;
@@ -73,6 +74,9 @@ $line-height-extra-small  :  rem(17px);
 }
 
 
+
+//  Body 
+
 %font-body-text {
   font-family:    $font-stack-IBM_Plex_Sans_Regular;
   font-size:                        $font-size-base;
@@ -100,12 +104,15 @@ $line-height-extra-small  :  rem(17px);
 }
 
 
+
+//  Small 
+
 %font-small-text-italic {
-  font-family:     $font-stack-IBM_Plex_Sans_Italic;
-  font-size:                       $font-size-small;
-  line-height:                   $line-height-small; 
-  color:                             $platinum-gray;
-  letter-spacing:                            normal;
+  font-family:  $font-stack-IBM_Plex_Sans_Medium_Italic;
+  font-size:                           $font-size-small;
+  line-height:                       $line-height-small; 
+  color:                                 $platinum-gray;
+  letter-spacing:                                normal;
 }
 
 %font-small-text-bold {
@@ -117,12 +124,23 @@ $line-height-extra-small  :  rem(17px);
 }
 
 
+
+//  Extra Small
+
 %font-extra-small-text {
   font-family:     $font-stack-IBM_Plex_Sans_Medium;
   font-size:                 $font-size-extra-small;
   line-height:             $line-height-extra-small; 
   color:                               $plain-white;
   letter-spacing:                            normal;
+}
+
+%font-extra-small-text-italic {
+  font-family:  $font-stack-IBM_Plex_Sans_Medium_Italic;
+  font-size:                     $font-size-extra-small;
+  line-height:                 $line-height-extra-small; 
+  color:                                   $plain-white;
+  letter-spacing:                                normal;
 }
 
 
