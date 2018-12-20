@@ -1,0 +1,104 @@
+
+.survey-page-footer {
+  //   General Footer Styles
+
+  // Center all the footer content 
+  display: flex;
+  justify-content: center;
+
+  // Add illustration to background 
+  background: url(/assets/images/bubbles_illustration.svg) no-repeat top;
+  background-position: 50.2% 1%;
+
+  // Illustration needs a fixed height to get the position right
+  height: rem(427px);
+
+
+  //   Main Container Styles 
+
+  &__outer-container {
+    max-width: rem(417px);            // for consistency - same width as the <form> container
+    margin: rem(158px) auto rem(142px) auto;
+    justify-content: flex-start;      // container stays on the right side even when resizing
+  }
+
+  //   1st & 2nd Paragraph Styles 
+
+  &__intro {
+    @extend %font-small-text-italic;
+    color: $raisin-black-b60;
+    margin-bottom: rem(22px);
+
+    span {
+      position: relative;       //  *acts a bounding box for ::after 
+      color: $plain-white;
+      padding-left: rem(16px);       // reposition the text to match the ::after container positioning
+      z-index: 1;
+
+      // Dark background container that highlights the span text (Josie Nagy)
+      &::after {
+        content: "";
+        display: block;
+        height: $space-24; width: rem(93px);
+
+        position: absolute;     //  *see: https://internetingishard.com/html-and-css/advanced-positioning/  >  (relatively) absolute positioning
+        top: rem(-2.6px);
+        left: rem(7.2px);
+
+        background: $raisin-black;
+        transform:  rotate(-1deg);
+        z-index: -1;
+      }
+    }
+  }
+
+  &__challenge-description {
+    @extend %font-extra-small-text;
+    color: $raisin-black-b43;
+    margin-bottom: $space-24;
+
+    .divider-line {
+      margin: 0 rem(4px);
+    }
+
+    .description-FCC {
+      @extend %font-extra-small-text-italic;
+      color: $raisin-black-b43;
+    }
+  }
+
+  //   Social Icons Styles  -  layout & positioning 
+
+
+  &__social-container {
+    display: flex;
+    
+    position: relative;
+    left: rem(-5px);
+  }
+
+  &__github-icon,
+  &__linkedIn-icon,
+  &__twitter-icon {
+    display: block; 
+    padding-left: rem(26px); 
+    margin-right: rem(20px);
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.35s;
+    }
+  }
+
+  &__github-icon { 
+    background: url(/assets/icons/github-logo-survey-form.svg) no-repeat;
+  }
+
+  &__linkedIn-icon {
+    background: url(/assets/icons/likein-logo-survey-form.svg) no-repeat;
+  }
+  
+  &__twitter-icon { 
+    background: url(/assets/icons/twitter-logo-survey-form.svg) no-repeat;
+  }
+}
