@@ -11,14 +11,14 @@
   background-position: 50.2% 1%;
 
   // Illustration needs a fixed height to get the position right
-  height: 427px;
+  height: rem(427px);
 
 
   //   Main Container Styles 
 
   &__outer-container {
-    max-width: 26.063rem;             // for consistency - same width as the <form> container
-    margin: 158px auto 142px auto;
+    max-width: rem(417px);            // for consistency - same width as the <form> container
+    margin: rem(158px) auto rem(142px) auto;
     justify-content: flex-start;      // container stays on the right side even when resizing
   }
 
@@ -26,24 +26,24 @@
 
   &__intro {
     @extend %font-small-text-italic;
-    color: #101010;
-    margin-bottom: 22px;
+    color: $raisin-black-b60;
+    margin-bottom: rem(22px);
 
     span {
       position: relative;       //  *acts a bounding box for ::after 
       color: $plain-white;
-      padding-left: 16px;       // reposition the text to match the ::after container positioning
+      padding-left: rem(16px);       // reposition the text to match the ::after container positioning
       z-index: 1;
 
       // Dark background container that highlights the span text (Josie Nagy)
       &::after {
         content: "";
         display: block;
-        height: $space-24; width: 93px;
+        height: $space-24; width: rem(93px);
 
         position: absolute;     //  *see: https://internetingishard.com/html-and-css/advanced-positioning/  >  (relatively) absolute positioning
-        top: -2.6px;
-        left: 7.2px;
+        top: rem(-2.6px);
+        left: rem(7.2px);
 
         background: $raisin-black;
         transform:  rotate(-1deg);
@@ -54,16 +54,16 @@
 
   &__challenge-description {
     @extend %font-extra-small-text;
-    color: #171717;
+    color: $raisin-black-b43;
     margin-bottom: $space-24;
 
     .divider-line {
-      margin: 0 4px;
+      margin: 0 rem(4px);
     }
 
     .description-FCC {
       @extend %font-extra-small-text-italic;
-      color: #171717;
+      color: $raisin-black-b43;
     }
   }
 
@@ -74,15 +74,15 @@
     display: flex;
     
     position: relative;
-    left: -5px;
+    left: rem(-5px);
   }
 
   &__github-icon,
   &__linkedIn-icon,
   &__twitter-icon {
     display: block; 
-    padding-left: 26px; 
-    margin-right: 20px;
+    padding-left: rem(26px); 
+    margin-right: rem(20px);
 
     &:hover {
       transform: scale(1.1);
