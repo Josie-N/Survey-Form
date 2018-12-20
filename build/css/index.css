@@ -263,8 +263,8 @@ button {
   color: #2A2A2A;
   letter-spacing: -0.2px; }
 
-.survey-page-header__time-info-container p, .survey-page-footer__intro {
-  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+.survey-page-header__time-info-container p {
+  font-family: "IBM Plex Sans Regular Italic", cursive;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #E0E0E0;
