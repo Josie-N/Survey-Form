@@ -138,7 +138,7 @@ a {
   letter-spacing: -0.2px; }
 
 .survey-page-header__time-info-container p, .survey-page-footer__intro {
-  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Sans Regular Italic", cursive;
   font-size: rem(14px);
   line-height: rem(20px);
   color: #E0E0E0;
@@ -154,14 +154,7 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: rem(11.4px);
-  line-height: rem(18px);
-  color: #FFFFFF;
-  letter-spacing: normal; }
-
-.survey-page-footer__challenge-description .description-FCC {
-  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
-  font-size: rem(11.4px);
-  line-height: rem(18px);
+  line-height: rem(17px);
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -263,7 +256,7 @@ button {
   color: #2A2A2A;
   letter-spacing: -0.2px; }
 
-.survey-page-header__time-info-container p {
+.survey-page-header__time-info-container p, .survey-page-footer__intro {
   font-family: "IBM Plex Sans Regular Italic", cursive;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -280,14 +273,7 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: 0.713rem;
-  line-height: 1.125rem;
-  color: #FFFFFF;
-  letter-spacing: normal; }
-
-.survey-page-footer__challenge-description .description-FCC {
-  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
-  font-size: 0.713rem;
-  line-height: 1.125rem;
+  line-height: 1.063rem;
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -308,9 +294,6 @@ body {
 #survey-form {
   margin: 6rem auto;
   max-width: 26.063rem; }
-
-.survey-page-body {
-  padding: 1px; }
 
 ul, li {
   list-style-type: none; }
@@ -338,6 +321,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF; }
 
 .survey-page-header {
+  background: #2A2A2A;
   background: #2A2A2A;
   padding: 0.063rem; }
   .survey-page-header__container {
@@ -400,7 +384,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*
 ⎟  
-⎟   Input fields  —  shared styles that all questions have in common
+⎟   Input field  —  shared styles that all questions have in common
 ⎟ 
 */
 .question-container {
@@ -620,27 +604,27 @@ button {
   justify-content: center;
   background: url(/assets/images/bubbles_illustration.svg) no-repeat top;
   background-position: 50.2% 1%;
-  height: 427px; }
+  height: 26.688rem; }
   .survey-page-footer__outer-container {
     max-width: 26.063rem;
-    margin: 158px auto 142px auto;
+    margin: 9.875rem auto 8.875rem auto;
     justify-content: flex-start; }
   .survey-page-footer__intro {
     color: #101010;
-    margin-bottom: 22px; }
+    margin-bottom: 1.375rem; }
     .survey-page-footer__intro span {
       position: relative;
       color: #FFFFFF;
-      padding-left: 16px;
+      padding-left: 1rem;
       z-index: 1; }
       .survey-page-footer__intro span::after {
         content: "";
         display: block;
-        height: 1.5rem;
-        width: 93px;
+        height: 1.8rem;
+        width: 5.938rem;
         position: absolute;
-        top: -2.6px;
-        left: 7.2px;
+        top: -0.231rem;
+        left: 0.45rem;
         background: #2A2A2A;
         transform: rotate(-1deg);
         z-index: -1; }
@@ -648,17 +632,17 @@ button {
     color: #171717;
     margin-bottom: 1.5rem; }
     .survey-page-footer__challenge-description .divider-line {
-      margin: 0 4px; }
+      margin: 0 0.25rem; }
     .survey-page-footer__challenge-description .description-FCC {
       color: #171717; }
   .survey-page-footer__social-container {
     display: flex;
     position: relative;
-    left: -5px; }
+    left: -0.313rem; }
   .survey-page-footer__github-icon, .survey-page-footer__linkedIn-icon, .survey-page-footer__twitter-icon {
     display: block;
-    padding-left: 26px;
-    margin-right: 20px; }
+    padding-left: 1.625rem;
+    margin-right: 1.25rem; }
     .survey-page-footer__github-icon:hover, .survey-page-footer__linkedIn-icon:hover, .survey-page-footer__twitter-icon:hover {
       transform: scale(1.1);
       transition: transform 0.35s; }
