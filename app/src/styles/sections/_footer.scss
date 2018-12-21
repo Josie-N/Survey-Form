@@ -27,6 +27,7 @@
   &__intro {
     @extend %font-small-text-italic;
     color: $raisin-black-b60;
+    font-size: $font-size-base;
     margin-bottom: rem(22px);
 
     span {
@@ -39,10 +40,10 @@
       &::after {
         content: "";
         display: block;
-        height: $space-24; width: rem(93px);
+        height: 1.8rem; width: rem(97px);
 
         position: absolute;     //  *see: https://internetingishard.com/html-and-css/advanced-positioning/  >  (relatively) absolute positioning
-        top: rem(-2.6px);
+        top: rem(-3.7px);
         left: rem(7.2px);
 
         background: $raisin-black;
