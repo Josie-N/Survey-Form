@@ -10,8 +10,8 @@
 
 //  Font Stacks (5)  ------------ //
 
-
-$font-stack-TTCommons: 'TTCommons Regular', Arial, Helvetica, sans-serif;	
+$font-stack-CallingCode: 'Calling Code Bold', Monaco, 'Courier New', Courier, monospace;	
+// $font-stack-TTCommons: 'TTCommons Regular', Arial, Helvetica, sans-serif;	
 $font-stack-IBM_Plex_Sans_Regular: 'IBM Plex Sans Regular', 'Avant Garde', Arial, Helvetica, sans-serif;	
 $font-stack-IBM_Plex_Sans_Italic: 'IBM Plex Sans Regular Italic', cursive;	
 $font-stack-IBM_Plex_Sans_Medium: 'IBM Plex Sans Medium', 'Avant Garde', Arial, Helvetica, sans-serif;	
@@ -48,10 +48,10 @@ $line-height-extra-small  :  rem(18px);
 //  Headings 
 
 %font-main-heading {
-  font-family:      $font-stack-TTCommons;
+  font-family:    $font-stack-CallingCode;
   font-size:       $font-size-extra-large;
   line-height:   $line-height-extra-large; 
-  color:                     $plain-white;  // maybe too specific?
+  color:                $raisin-black-b60;  // maybe too specific?
   letter-spacing:                  normal;
 }
 
