@@ -102,11 +102,11 @@ a {
 ⎟  https://medium.com/tradecraft-traction/harmonious-typography-and-grids-10da490a17d
 ⎟ 
 */
-.survey-page-header__highlight-background h1 {
-  font-family: "TTCommons Regular", Arial, Helvetica, sans-serif;
+.survey-page-header h1 {
+  font-family: "Calling Code Bold", Monaco, "Courier New", Courier, monospace;
   font-size: rem(36px);
   line-height: rem(54px);
-  color: #FFFFFF;
+  color: #101010;
   letter-spacing: normal; }
 
 .question-container__label {
@@ -137,7 +137,14 @@ a {
   color: #2A2A2A;
   letter-spacing: -0.2px; }
 
-.survey-page-header__time-info-container p {
+.survey-page-header p {
+  font-family: "Calling Code Regular Italic", Monaco, "Courier New", Courier, monospace;
+  font-size: rem(14px);
+  line-height: rem(20px);
+  color: #202020;
+  letter-spacing: normal; }
+
+.survey-page-footer__intro {
   font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: rem(14px);
   line-height: rem(20px);
@@ -154,7 +161,14 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: rem(11.4px);
-  line-height: rem(17px);
+  line-height: rem(18px);
+  color: #FFFFFF;
+  letter-spacing: normal; }
+
+.survey-page-footer__challenge-description .description-FCC {
+  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: rem(11.4px);
+  line-height: rem(18px);
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -208,8 +222,14 @@ button {
   font-style: normal; }
 
 @font-face {
-  font-family: 'TTCommons Regular';
-  src: url("../../assets/fonts/TTCommons-Regular.woff2") format("woff2");
+  font-family: 'Calling Code Bold';
+  src: url("../../assets/fonts/CallingCode-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calling Code Regular Italic';
+  src: url("../../assets/fonts/CallingCode-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
@@ -221,11 +241,11 @@ button {
 ⎟  https://medium.com/tradecraft-traction/harmonious-typography-and-grids-10da490a17d
 ⎟ 
 */
-.survey-page-header__highlight-background h1 {
-  font-family: "TTCommons Regular", Arial, Helvetica, sans-serif;
+.survey-page-header h1 {
+  font-family: "Calling Code Bold", Monaco, "Courier New", Courier, monospace;
   font-size: 2.25rem;
   line-height: 3.375rem;
-  color: #FFFFFF;
+  color: #101010;
   letter-spacing: normal; }
 
 .question-container__label {
@@ -256,8 +276,15 @@ button {
   color: #2A2A2A;
   letter-spacing: -0.2px; }
 
-.survey-page-header__time-info-container p, .survey-page-footer__intro {
-  font-family: "IBM Plex Sans Regular Italic", cursive;
+.survey-page-header p {
+  font-family: "Calling Code Regular Italic", Monaco, "Courier New", Courier, monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #202020;
+  letter-spacing: normal; }
+
+.survey-page-footer__intro {
+  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #E0E0E0;
@@ -273,7 +300,14 @@ button {
 .survey-page-footer__challenge-description {
   font-family: "IBM Plex Sans Medium", "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: 0.713rem;
-  line-height: 1.063rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+  letter-spacing: normal; }
+
+.survey-page-footer__challenge-description .description-FCC {
+  font-family: "IBM Plex Sans Medium Italic", "Avant Garde", Arial, Helvetica, sans-serif;
+  font-size: 0.713rem;
+  line-height: 1.125rem;
   color: #FFFFFF;
   letter-spacing: normal; }
 
@@ -324,8 +358,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF; }
 
 .survey-page-header {
-  background: #2A2A2A;
-  background: #2A2A2A;
   padding: 0.063rem; }
   .survey-page-header__container {
     width: 26rem;
@@ -333,57 +365,13 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
     margin-top: 3.75rem;
     margin-bottom: 5.25rem; }
-  .survey-page-header__time-info-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1.5rem; }
-    .survey-page-header__time-info-container p {
-      word-spacing: 0.188rem; }
-  .survey-page-header__decorative-line {
-    background-color: #354290;
-    height: 0.125rem; }
-    .survey-page-header__decorative-line:first-of-type {
-      width: 55.8%;
-      margin-right: 1.5rem; }
-    .survey-page-header__decorative-line:last-of-type {
-      width: 10%;
-      margin-left: 1.5rem; }
-  .survey-page-header__highlight-background span:first-of-type {
-    z-index: 4; }
-  .survey-page-header__highlight-background span:last-of-type {
-    z-index: 1;
-    top: -0.313rem; }
-  .survey-page-header__highlight-background span {
-    display: inline-block;
-    position: relative;
-    background-color: #3949AB;
-    box-shadow: 0.25rem -0.313rem 2.125rem 0.063rem rgba(36, 36, 36, 0.67);
-    height: 3.75rem;
-    padding: 0.5rem 3.625rem 0px 0.875rem; }
-  .survey-page-header__highlight-background .hidden-visibility {
+  .survey-page-header .hidden-visibility {
     position: absolute;
     left: -10000px;
     top: auto;
     width: 1px;
     height: 1px;
     overflow: hidden; }
-  .survey-page-header_logo {
-    margin-top: 3rem;
-    height: 2.75rem;
-    background: url(../../assets/logo/survey-form-FCC-logo-tablet.svg) no-repeat;
-    background-position: 0.75rem bottom;
-    opacity: 0.8; }
-  .survey-page-header:after {
-    content: '';
-    position: absolute;
-    top: 24.688rem;
-    right: 26%;
-    width: 2.5rem;
-    height: 0.938rem;
-    border: 1px solid transparent;
-    border-top-color: #2A2A2A;
-    border-width: 1.375rem 1.688rem 0; }
 
 /*
 ⎟  
@@ -614,6 +602,7 @@ button {
     justify-content: flex-start; }
   .survey-page-footer__intro {
     color: #101010;
+    font-size: 16px;
     margin-bottom: 1.375rem; }
     .survey-page-footer__intro span {
       position: relative;
@@ -624,7 +613,7 @@ button {
         content: "";
         display: block;
         height: 1.8rem;
-        width: 5.938rem;
+        width: 6.063rem;
         position: absolute;
         top: -0.231rem;
         left: 0.45rem;

@@ -1,6 +1,5 @@
 
 .survey-page-header {
-  background: $raisin-black;
   padding: rem(1px);    // collapsing margin issue fix: https://www.sitepoint.com/collapsing-margins/
 
   &__container {
@@ -11,55 +10,13 @@
     margin-bottom: $space-84;
   }
 
-  &__time-info-container {  
-    @include flex(flex-start, center);
-    margin-bottom: $space-24;
-
-    p {
-      @extend %font-small-text-italic;
-      word-spacing: rem(3px);
-    }
+  p {
+    @extend %font-small-text-italic-CC;
   }
 
-  &__decorative-line {
-    background-color: #354290;  // color palette issue
-    height: rem(2px);
-
-    &:first-of-type {
-      width: 55.8%;
-      margin-right: rem(24px);
-    }
-
-    &:last-of-type {
-      width: 10%;
-      margin-left: rem(24px);
-    }
+  h1 {
+    @extend %font-main-heading;
   }
-
-  &__highlight-background {
-    span:first-of-type {
-      // clip-path: polygon(0% 0%, 100% 0%, 91% 100%, 0% 100%);
-      z-index: 4;
-    }
-
-    span:last-of-type {
-      // clip-path: polygon(0% 0%, 100% 0%, 81% 100%, 0% 100%);
-      z-index: 1;
-      top: rem(-5px);
-    }
-
-    h1 {
-      @extend %font-main-heading;
-    }
-
-    span {
-      display: inline-block;
-      position: relative;
-      background-color: $van-gogh-blue;
-      box-shadow: rem(4px) rem(-5px) rem(34px) rem(1px) rgba(36,36,36,0.67);
-      height: rem(60px);
-      padding: rem(8px) rem(58px) 0px rem(14px);
-    }
 
     //  Goal: hide  <span>FreeCodeCamp</span>  visually by moving it off-screen
     //  Why: Screen readers still need to hear this element, but visual readers 
@@ -76,25 +33,4 @@
     }
   }
 
-  &_logo {
-    margin-top: $space-48;
-    height: rem(44px);
-    background: url(../../assets/logo/survey-form-FCC-logo-tablet.svg) no-repeat;
-    background-position: rem(12px) bottom;
-    opacity: 0.8;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: rem(395px);
-    right: 26%;
-    
-    width: rem(40px);
-    height: rem(15px);
-    border: 1px solid transparent;
-    border-top-color: $raisin-black;
-    border-width: rem(22px) rem(27px) 0;
-  }
-}
 
