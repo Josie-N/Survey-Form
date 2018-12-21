@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="110" viewBox="0 0 310 110">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#020101" stroke="#000" stroke-width="3" d="M182.5,106.971374 L200.181179,93.5 L308,93.5 C308.276142,93.5 308.5,93.2761424 308.5,93 L308.5,17 C308.5,16.7238576 308.276142,16.5 308,16.5 L12,16.5 C11.7238576,16.5 11.5,16.7238576 11.5,17 L11.5,93 C11.5,93.2761424 11.7238576,93.5 12,93.5 L182.5,93.5 L182.5,106.971374 Z"/>
+    <path fill="#FFF" stroke="#000" stroke-width="3" d="M302.5,86.5 L302.5,1.5 L1.5,1.5 L1.5,86.5 L174.5,86.5 L174.5,99.9713745 L192.181179,86.5 L192.6875,86.5 L302.5,86.5 Z"/>
+    <text fill="#000" font-family="CallingCode-Italic, Calling Code" font-size="24" font-style="italic" letter-spacing=".171">
+      <tspan x="67" y="50">freeCodeCamp</tspan>
+    </text>
+  </g>
+</svg>
