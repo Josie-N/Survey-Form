@@ -11,9 +11,11 @@
 //  Font Stacks (5)  ------------ //
 
 $font-stack-CallingCode: 'Calling Code Bold', Monaco, 'Courier New', Courier, monospace;	
-// $font-stack-TTCommons: 'TTCommons Regular', Arial, Helvetica, sans-serif;	
+$font-stack-CallingCode_Italic: 'Calling Code Regular Italic', Monaco, 'Courier New', Courier, monospace;	
+
 $font-stack-IBM_Plex_Sans_Regular: 'IBM Plex Sans Regular', 'Avant Garde', Arial, Helvetica, sans-serif;	
-$font-stack-IBM_Plex_Sans_Italic: 'IBM Plex Sans Regular Italic', cursive;	
+$font-stack-IBM_Plex_Sans_Italic: 'IBM Plex Sans Regular Italic', cursive;
+
 $font-stack-IBM_Plex_Sans_Medium: 'IBM Plex Sans Medium', 'Avant Garde', Arial, Helvetica, sans-serif;	
 $font-stack-IBM_Plex_Sans_Medium_Italic: 'IBM Plex Sans Medium Italic', 'Avant Garde', Arial, Helvetica, sans-serif;	
 
@@ -107,6 +109,15 @@ $line-height-extra-small  :  rem(18px);
 
 //  Small 
 
+
+%font-small-text-italic-CC {
+  font-family:           $font-stack-CallingCode_Italic;
+  font-size:                           $font-size-small;
+  line-height:                       $line-height-small; 
+  color:                              $raisin-black-b23;
+  letter-spacing:                                normal;
+}
+
 %font-small-text-italic {
   font-family:  $font-stack-IBM_Plex_Sans_Medium_Italic;
   font-size:                           $font-size-small;
@@ -116,11 +127,11 @@ $line-height-extra-small  :  rem(18px);
 }
 
 %font-small-text-bold {
-  font-family:     $font-stack-IBM_Plex_Sans_Medium;
-  font-size:                       $font-size-small;
-  line-height:                   $line-height-small; 
-  color:                               $pitch-black;
-  letter-spacing:                            0.44px;
+  font-family:         $font-stack-IBM_Plex_Sans_Medium;
+  font-size:                           $font-size-small;
+  line-height:                       $line-height-small; 
+  color:                                   $pitch-black;
+  letter-spacing:                                0.44px;
 }
 
 

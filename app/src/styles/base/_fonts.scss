@@ -1,3 +1,6 @@
+
+//  IBM Plex Sans
+
 @font-face {
   font-family: 'IBM Plex Sans Regular';
   src: url('../../assets/fonts/IBMPlexSans-Regular.woff2') format('woff2');
@@ -26,9 +29,19 @@
   font-style: normal;
 }
 
+
+//  Calling Code
+
 @font-face {
   font-family: 'Calling Code Bold';
   src: url('../../assets/fonts/CallingCode-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calling Code Regular Italic';
+  src: url('../../assets/fonts/CallingCode-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
